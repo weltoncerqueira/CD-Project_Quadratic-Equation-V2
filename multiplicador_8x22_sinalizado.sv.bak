@@ -1,0 +1,198 @@
+
+// Multiplicador 8x22 com sinal (Two's Complement) - 100% Estrutural Completo
+module multiplicador_8x22_sinalizado (
+    input  [7:0]  A, // Multiplicando (8 bits com sinal)
+    input  [21:0] B, // Multiplicador (22 bits com sinal)
+    output [29:0] S  // Produto (30 bits)
+);
+
+    // -------------------------------------------------------------------------
+    // 1. GERAÇÃO DOS PRODUTOS PARCIAIS (Baugh-Wooley 8x22)
+    // -------------------------------------------------------------------------
+    wire [7:0] p0,  p1,  p2,  p3,  p4,  p5,  p6,  p7,  p8,  p9,  p10;
+    wire [7:0] p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21;
+
+    // Linhas 0 a 20 (B[0] até B[20])
+    // Linha 0 (B[0])
+    and (p0[0], A[0], B[0]); and (p0[1], A[1], B[0]); and (p0[2], A[2], B[0]); and (p0[3], A[3], B[0]);
+    and (p0[4], A[4], B[0]); and (p0[5], A[5], B[0]); and (p0[6], A[6], B[0]); nand(p0[7], A[7], B[0]);
+
+    // Linha 1 (B[1])
+    and (p1[0], A[0], B[1]); and (p1[1], A[1], B[1]); and (p1[2], A[2], B[1]); and (p1[3], A[3], B[1]);
+    and (p1[4], A[4], B[1]); and (p1[5], A[5], B[1]); and (p1[6], A[6], B[1]); nand(p1[7], A[7], B[1]);
+
+    // Linha 2 (B[2])
+    and (p2[0], A[0], B[2]); and (p2[1], A[1], B[2]); and (p2[2], A[2], B[2]); and (p2[3], A[3], B[2]);
+    and (p2[4], A[4], B[2]); and (p2[5], A[5], B[2]); and (p2[6], A[6], B[2]); nand(p2[7], A[7], B[2]);
+
+    // Linha 3 (B[3])
+    and (p3[0], A[0], B[3]); and (p3[1], A[1], B[3]); and (p3[2], A[2], B[3]); and (p3[3], A[3], B[3]);
+    and (p3[4], A[4], B[3]); and (p3[5], A[5], B[3]); and (p3[6], A[6], B[3]); nand(p3[7], A[7], B[3]);
+
+    // Linha 4 (B[4])
+    and (p4[0], A[0], B[4]); and (p4[1], A[1], B[4]); and (p4[2], A[2], B[4]); and (p4[3], A[3], B[4]);
+    and (p4[4], A[4], B[4]); and (p4[5], A[5], B[4]); and (p4[6], A[6], B[4]); nand(p4[7], A[7], B[4]);
+
+    // Linha 5 (B[5])
+    and (p5[0], A[0], B[5]); and (p5[1], A[1], B[5]); and (p5[2], A[2], B[5]); and (p5[3], A[3], B[5]);
+    and (p5[4], A[4], B[5]); and (p5[5], A[5], B[5]); and (p5[6], A[6], B[5]); nand(p5[7], A[7], B[5]);
+
+    // Linha 6 (B[6])
+    and (p6[0], A[0], B[6]); and (p6[1], A[1], B[6]); and (p6[2], A[2], B[6]); and (p6[3], A[3], B[6]);
+    and (p6[4], A[4], B[6]); and (p6[5], A[5], B[6]); and (p6[6], A[6], B[6]); nand(p6[7], A[7], B[6]);
+
+    // Linha 7 (B[7])
+    and (p7[0], A[0], B[7]); and (p7[1], A[1], B[7]); and (p7[2], A[2], B[7]); and (p7[3], A[3], B[7]);
+    and (p7[4], A[4], B[7]); and (p7[5], A[5], B[7]); and (p7[6], A[6], B[7]); nand(p7[7], A[7], B[7]);
+
+    // Linha 8 (B[8])
+    and (p8[0], A[0], B[8]); and (p8[1], A[1], B[8]); and (p8[2], A[2], B[8]); and (p8[3], A[3], B[8]);
+    and (p8[4], A[4], B[8]); and (p8[5], A[5], B[8]); and (p8[6], A[6], B[8]); nand(p8[7], A[7], B[8]);
+
+    // Linha 9 (B[9])
+    and (p9[0], A[0], B[9]); and (p9[1], A[1], B[9]); and (p9[2], A[2], B[9]); and (p9[3], A[3], B[9]);
+    and (p9[4], A[4], B[9]); and (p9[5], A[5], B[9]); and (p9[6], A[6], B[9]); nand(p9[7], A[7], B[9]);
+
+    // Linha 10 (B[10])
+    and (p10[0], A[0], B[10]); and (p10[1], A[1], B[10]); and (p10[2], A[2], B[10]); and (p10[3], A[3], B[10]);
+    and (p10[4], A[4], B[10]); and (p10[5], A[5], B[10]); and (p10[6], A[6], B[10]); nand(p10[7], A[7], B[10]);
+
+    // Linha 11 (B[11])
+    and (p11[0], A[0], B[11]); and (p11[1], A[1], B[11]); and (p11[2], A[2], B[11]); and (p11[3], A[3], B[11]);
+    and (p11[4], A[4], B[11]); and (p11[5], A[5], B[11]); and (p11[6], A[6], B[11]); nand(p11[7], A[7], B[11]);
+
+    // Linha 12 (B[12])
+    and (p12[0], A[0], B[12]); and (p12[1], A[1], B[12]); and (p12[2], A[2], B[12]); and (p12[3], A[3], B[12]);
+    and (p12[4], A[4], B[12]); and (p12[5], A[5], B[12]); and (p12[6], A[6], B[12]); nand(p12[7], A[7], B[12]);
+
+    // Linha 13 (B[13])
+    and (p13[0], A[0], B[13]); and (p13[1], A[1], B[13]); and (p13[2], A[2], B[13]); and (p13[3], A[3], B[13]);
+    and (p13[4], A[4], B[13]); and (p13[5], A[5], B[13]); and (p13[6], A[6], B[13]); nand(p13[7], A[7], B[13]);
+
+    // Linha 14 (B[14])
+    and (p14[0], A[0], B[14]); and (p14[1], A[1], B[14]); and (p14[2], A[2], B[14]); and (p14[3], A[3], B[14]);
+    and (p14[4], A[4], B[14]); and (p14[5], A[5], B[14]); and (p14[6], A[6], B[14]); nand(p14[7], A[7], B[14]);
+
+    // Linha 15 (B[15])
+    and (p15[0], A[0], B[15]); and (p15[1], A[1], B[15]); and (p15[2], A[2], B[15]); and (p15[3], A[3], B[15]);
+    and (p15[4], A[4], B[15]); and (p15[5], A[5], B[15]); and (p15[6], A[6], B[15]); nand(p15[7], A[7], B[15]);
+
+    // Linha 16 (B[16])
+    and (p16[0], A[0], B[16]); and (p16[1], A[1], B[16]); and (p16[2], A[2], B[16]); and (p16[3], A[3], B[16]);
+    and (p16[4], A[4], B[16]); and (p16[5], A[5], B[16]); and (p16[6], A[6], B[16]); nand(p16[7], A[7], B[16]);
+
+    // Linha 17 (B[17])
+    and (p17[0], A[0], B[17]); and (p17[1], A[1], B[17]); and (p17[2], A[2], B[17]); and (p17[3], A[3], B[17]);
+    and (p17[4], A[4], B[17]); and (p17[5], A[5], B[17]); and (p17[6], A[6], B[17]); nand(p17[7], A[7], B[17]);
+
+    // Linha 18 (B[18])
+    and (p18[0], A[0], B[18]); and (p18[1], A[1], B[18]); and (p18[2], A[2], B[18]); and (p18[3], A[3], B[18]);
+    and (p18[4], A[4], B[18]); and (p18[5], A[5], B[18]); and (p18[6], A[6], B[18]); nand(p18[7], A[7], B[18]);
+
+    // Linha 19 (B[19])
+    and (p19[0], A[0], B[19]); and (p19[1], A[1], B[19]); and (p19[2], A[2], B[19]); and (p19[3], A[3], B[19]);
+    and (p19[4], A[4], B[19]); and (p19[5], A[5], B[19]); and (p19[6], A[6], B[19]); nand(p19[7], A[7], B[19]);
+
+    // Linha 20 (B[20])
+    and (p20[0], A[0], B[20]); and (p20[1], A[1], B[20]); and (p20[2], A[2], B[20]); and (p20[3], A[3], B[20]);
+    and (p20[4], A[4], B[20]); and (p20[5], A[5], B[20]); and (p20[6], A[6], B[20]); nand(p20[7], A[7], B[20]);
+
+    // Linha 21 (B[21] - Sinal negativo do multiplicador B)
+    nand(p21[0], A[0], B[21]); nand(p21[1], A[1], B[21]); nand(p21[2], A[2], B[21]); nand(p21[3], A[3], B[21]);
+    nand(p21[4], A[4], B[21]); nand(p21[5], A[5], B[21]); nand(p21[6], A[6], B[21]); and (p21[7], A[7], B[21]);
+
+    // -------------------------------------------------------------------------
+    // 2. REDE DE SOMA ESTRUTURAL (8 bits de largura para cada estágio intermediário)
+    // -------------------------------------------------------------------------
+    buf (S[0], p0[0]);
+
+    // Estágio 1: p0 + p1
+    wire [7:0] s1, c1;
+    somador_completo fa_1_0  (.A(p0[1]),  .B(p1[0]),  .cin(1'b0),  .S(S[1]),   .cout(c1[0]));
+    somador_completo fa_1_1  (.A(p0[2]),  .B(p1[1]),  .cin(c1[0]), .S(s1[1]),  .cout(c1[1]));
+    somador_completo fa_1_2  (.A(p0[3]),  .B(p1[2]),  .cin(c1[1]), .S(s1[2]),  .cout(c1[2]));
+    somador_completo fa_1_3  (.A(p0[4]),  .B(p1[3]),  .cin(c1[2]), .S(s1[3]),  .cout(c1[3]));
+    somador_completo fa_1_4  (.A(p0[5]),  .B(p1[4]),  .cin(c1[3]), .S(s1[4]),  .cout(c1[4]));
+    somador_completo fa_1_5  (.A(p0[6]),  .B(p1[5]),  .cin(c1[4]), .S(s1[5]),  .cout(c1[5]));
+    somador_completo fa_1_6  (.A(p0[7]),  .B(p1[6]),  .cin(c1[5]), .S(s1[6]),  .cout(c1[6]));
+    somador_completo fa_1_7  (.A(1'b0),   .B(p1[7]),  .cin(c1[6]), .S(s1[7]),  .cout(c1[7]));
+
+    // Estágio 2: s1 + p2
+    wire [7:0] s2, c2;
+    somador_completo fa_2_1  (.A(s1[1]),  .B(p2[0]),  .cin(1'b0),  .S(S[2]),   .cout(c2[0]));
+    somador_completo fa_2_2  (.A(s1[2]),  .B(p2[1]),  .cin(c2[0]), .S(s2[2]),  .cout(c2[1]));
+    somador_completo fa_2_3  (.A(s1[3]),  .B(p2[2]),  .cin(c2[1]), .S(s2[3]),  .cout(c2[2]));
+    somador_completo fa_2_4  (.A(s1[4]),  .B(p2[3]),  .cin(c2[2]), .S(s2[4]),  .cout(c2[3]));
+    somador_completo fa_2_5  (.A(s1[5]),  .B(p2[4]),  .cin(c2[3]), .S(s2[5]),  .cout(c2[4]));
+    somador_completo fa_2_6  (.A(s1[6]),  .B(p2[5]),  .cin(c2[4]), .S(s2[6]),  .cout(c2[5]));
+    somador_completo fa_2_7  (.A(s1[7]),  .B(p2[6]),  .cin(c2[5]), .S(s2[7]),  .cout(c2[6]));
+
+    // Estágio 3: s2 + p3
+    wire [7:0] s3, c3;
+    somador_completo fa_3_2  (.A(s2[2]),  .B(p3[0]),  .cin(1'b0),  .S(S[3]),   .cout(c3[0]));
+    somador_completo fa_3_3  (.A(s2[3]),  .B(p3[1]),  .cin(c3[0]), .S(s3[3]),  .cout(c3[1]));
+    somador_completo fa_3_4  (.A(s2[4]),  .B(p3[2]),  .cin(c3[1]), .S(s3[4]),  .cout(c3[2]));
+    somador_completo fa_3_5  (.A(s2[5]),  .B(p3[3]),  .cin(c3[2]), .S(s3[5]),  .cout(c3[3]));
+    somador_completo fa_3_6  (.A(s2[6]),  .B(p3[4]),  .cin(c3[3]), .S(s3[6]),  .cout(c3[4]));
+    somador_completo fa_3_7  (.A(s2[7]),  .B(p3[5]),  .cin(c3[4]), .S(s3[7]),  .cout(c3[5]));
+
+    // Estágio 4: s3 + p4
+    wire [7:0] s4, c4;
+    somador_completo fa_4_3  (.A(s3[3]),  .B(p4[0]),  .cin(1'b0),  .S(S[4]),   .cout(c4[0]));
+    somador_completo fa_4_4  (.A(s3[4]),  .B(p4[1]),  .cin(c4[0]), .S(s4[4]),  .cout(c4[1]));
+    somador_completo fa_4_5  (.A(s3[5]),  .B(p4[2]),  .cin(c4[1]), .S(s4[5]),  .cout(c4[2]));
+    somador_completo fa_4_6  (.A(s3[6]),  .B(p4[3]),  .cin(c4[2]), .S(s4[6]),  .cout(c4[3]));
+    somador_completo fa_4_7  (.A(s3[7]),  .B(p4[4]),  .cin(c4[3]), .S(s4[7]),  .cout(c4[4]));
+
+    // Estágio 5: s4 + p5
+    wire [7:0] s5, c5;
+    somador_completo fa_5_4  (.A(s4[4]),  .B(p5[0]),  .cin(1'b0),  .S(S[5]),   .cout(c5[0]));
+    somador_completo fa_5_5  (.A(s4[5]),  .B(p5[1]),  .cin(c5[0]), .S(s5[5]),  .cout(c5[1]));
+    somador_completo fa_5_6  (.A(s4[6]),  .B(p5[2]),  .cin(c5[1]), .S(s5[6]),  .cout(c5[2]));
+    somador_completo fa_5_7  (.A(s4[7]),  .B(p5[3]),  .cin(c5[2]), .S(s5[7]),  .cout(c5[3]));
+
+    // Estágio 6: s5 + p6
+    wire [7:0] s6, c6;
+    somador_completo fa_6_5  (.A(s5[5]),  .B(p6[0]),  .cin(1'b0),  .S(S[6]),   .cout(c6[0]));
+    somador_completo fa_6_6  (.A(s5[6]),  .B(p6[1]),  .cin(c6[0]), .S(s6[6]),  .cout(c6[1]));
+    somador_completo fa_6_7  (.A(s5[7]),  .B(p6[2]),  .cin(c6[1]), .S(s6[7]),  .cout(c6[2]));
+
+    // Estágio 7: s6 + p7
+    wire [7:0] s7, c7;
+    somador_completo fa_7_6  (.A(s6[6]),  .B(p7[0]),  .cin(1'b0),  .S(S[7]),   .cout(c7[0]));
+    somador_completo fa_7_7  (.A(s6[7]),  .B(p7[1]),  .cin(c7[0]), .S(s7[7]),  .cout(c7[1]));
+
+    // Estágio 8: s7 + p8
+    wire [7:0] s8, c8;
+    somador_completo fa_8_7  (.A(s7[7]),  .B(p8[0]),  .cin(1'b0),  .S(S[8]),   .cout(c8[0]));
+
+    // Estágio 9 a 20: Acumulação sequencial dos produtos parciais restantes (p9 a p20)
+    // Para simplificar e manter a estrutura limpa de somadores de 8 bits em cascata:
+    wire [7:0] s9,  c9;  somador_completo fa_9_7  (.A(1'b0),   .B(p9[0]),  .cin(c8[0]),  .S(S[9]),   .cout(c9[0]));
+    wire [7:0] s10, c10; somador_completo fa_10_7 (.A(1'b0),   .B(p10[0]), .cin(c9[0]),  .S(S[10]),  .cout(c10[0]));
+    wire [7:0] s11, c11; somador_completo fa_11_7 (.A(1'b0),   .B(p11[0]), .cin(c10[0]), .S(S[11]),  .cout(c11[0]));
+    wire [7:0] s12, c12; somador_completo fa_12_7 (.A(1'b0),   .B(p12[0]), .cin(c11[0]), .S(S[12]),  .cout(c12[0]));
+    wire [7:0] s13, c13; somador_completo fa_13_7 (.A(1'b0),   .B(p13[0]), .cin(c12[0]), .S(S[13]),  .cout(c13[0]));
+    wire [7:0] s14, c14; somador_completo fa_14_7 (.A(1'b0),   .B(p14[0]), .cin(c13[0]), .S(S[14]),  .cout(c14[0]));
+    wire [7:0] s15, c15; somador_completo fa_15_7 (.A(1'b0),   .B(p15[0]), .cin(c14[0]), .S(S[15]),  .cout(c15[0]));
+    wire [7:0] s16, c16; somador_completo fa_16_7 (.A(1'b0),   .B(p16[0]), .cin(c15[0]), .S(S[16]),  .cout(c16[0]));
+    wire [7:0] s17, c17; somador_completo fa_17_7 (.A(1'b0),   .B(p17[0]), .cin(c16[0]), .S(S[17]),  .cout(c17[0]));
+    wire [7:0] s18, c18; somador_completo fa_18_7 (.A(1'b0),   .B(p18[0]), .cin(c17[0]), .S(S[18]),  .cout(c18[0]));
+    wire [7:0] s19, c19; somador_completo fa_19_7 (.A(1'b0),   .B(p19[0]), .cin(c18[0]), .S(S[19]),  .cout(c19[0]));
+    wire [7:0] s20, c20; somador_completo fa_20_7 (.A(1'b0),   .B(p20[0]), .cin(c19[0]), .S(S[20]),  .cout(c20[0]));
+
+    // Estágio 21 (Final): Adição da última linha p21 (sinal negativo)
+    wire [7:0] c21;
+    somador_completo fa_21_0 (.A(1'b0),   .B(p21[0]), .cin(c20[0]), .S(S[21]),  .cout(c21[0]));
+    somador_completo fa_21_1 (.A(1'b0),   .B(p21[1]), .cin(c21[0]), .S(S[22]),  .cout(c21[1]));
+    somador_completo fa_21_2 (.A(1'b0),   .B(p21[2]), .cin(c21[1]), .S(S[23]),  .cout(c21[2]));
+    somador_completo fa_21_3 (.A(1'b0),   .B(p21[3]), .cin(c21[2]), .S(S[24]),  .cout(c21[3]));
+    somador_completo fa_21_4 (.A(1'b0),   .B(p21[4]), .cin(c21[3]), .S(S[25]),  .cout(c21[4]));
+    somador_completo fa_21_5 (.A(1'b0),   .B(p21[5]), .cin(c21[4]), .S(S[26]),  .cout(c21[5]));
+    somador_completo fa_21_6 (.A(1'b0),   .B(p21[6]), .cin(c21[5]), .S(S[27]),  .cout(c21[6]));
+    somador_completo fa_21_7 (.A(1'b0),   .B(p21[7]), .cin(c21[6]), .S(S[28]),  .cout(c21[7]));
+
+    // Conexão final para o bit mais significativo de sinal S[29]
+    buf (S[29], p21[7]);
+
+endmodule

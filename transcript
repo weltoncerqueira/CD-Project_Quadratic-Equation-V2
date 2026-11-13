@@ -1,1236 +1,1744 @@
-# Compile of calcula_x2.sv was successful.
-# Compile of divisor_9bits.sv was successful.
-# Compile of tb_calcula_y.sv was successful.
-# Compile of bcd_to_7seg.v was successful.
-# Compile of bin_pra_decimal.v was successful.
-# Compile of calcula_x1.v was successful.
+# Compile of calcula_vertices.v was successful.
+# Compile of calcula_y.sv was successful.
 # Compile of calcula_y.v was successful.
-# Compile of calculo_delta.v was successful.
+# Compile of calcula_y_linha.v was successful.
+# Compile of calcula_y_tb.sv failed with 2 errors.
 # Compile of complementoDe2_8bits.v was successful.
+# Compile of complementoDe2_16bits.v was successful.
+# Compile of complementoDe2_24bits.v was successful.
 # Compile of contador_2b.v was successful.
-# Compile of divisor_9x9_sinalizado.v was successful.
-# Compile of integrador.v was successful.
-# Compile of multiplicador_8x8.v was successful.
+# Compile of contador_3b.v was successful.
+# Compile of contador_640.v was successful.
+# Compile of decoder_abc.v was successful.
+# Compile of desenha_plano_cartesiano.v was successful.
+# Compile of detector_de_borda.v was successful.
+# Compile of ff_D.v was successful.
+# Compile of ff_T.v was successful.
+# Compile of integra_teste.v was successful.
+# Compile of maquina_central.v was successful.
+# Compile of maquina_VGA.v was successful.
 # Compile of multiplicador_8x8_sinalizado.v was successful.
-# Compile of multiplicador_16x8.v was successful.
+# Compile of multiplicador_8x11_sinalizado.v was successful.
+# Compile of multiplicador_8x22_sinalizado.sv was successful.
+# Compile of multiplicador_11x11_sinalizado.v was successful.
+# Compile of multiplicador_16x8_sinalizado.sv was successful.
+# Compile of multiplicador_16x11_sinalizado.v was successful.
+# Compile of multiplicador_22x11_sinalizado.v failed with 12 errors.
 # Compile of mux_2x1.v was successful.
-# Compile of raiz_Quadrada.v was successful.
-# Compile of seletor_xy.v was successful.
+# Compile of registrador_8b.v was successful.
 # Compile of somador_completo.v was successful.
-# Compile of tb_calcula_x1.v was successful.
-# Compile of tb_calcula_x2.v was successful.
-# Compile of tb_integrador.v was successful.
-# 22 compiles, 0 failed with no errors.
+# Compile of tb_calcula_y.v was successful.
+# Compile of vga_sync.v was successful.
+# 31 compiles, 2 failed with 14 errors.
+# Compile of multiplicador_22x11_sinalizado.v failed with 12 errors.
 vlog *.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:00:17 on Oct 07,2026
-# vlog -reportprogress 300 bcd_to_7seg.v bin_pra_decimal.v calcula_x1.v calcula_y.v calculo_delta.v complementoDe2_8bits.v contador_2b.v divisor_9x9_sinalizado.v integrador.v multiplicador_16x8.v multiplicador_8x8.v multiplicador_8x8_sinalizado.v mux_2x1.v raiz_Quadrada.v seletor_xy.v somador_completo.v tb_calcula_x1.v tb_calcula_x2.v tb_integrador.v 
-# -- Compiling module bcd_to_7seg
-# -- Compiling module bcd_maior_igual_5
-# -- Compiling module somador_4bits
-# -- Compiling module mux2_1_4bits
-# -- Compiling module ajuste_bcd
-# -- Compiling module double_dabble_stage
-# -- Compiling module bin_pra_decimal
-# -- Compiling module calcula_x1
-# -- Compiling module complementoDe2_9bits
+# Start time: 20:48:12 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
 # -- Compiling module calcula_y
-# -- Compiling module somador_24b
-# -- Compiling module calculo_delta
-# -- Compiling module subtrator_18bits
-# -- Compiling module complementoDe2_8bits
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
 # -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
 # -- Compiling module contador_2b
-# -- Compiling module ff_T
-# -- Compiling module divisor_9x9_sinalizado
-# -- Compiling module subtrator
-# -- Compiling module divisor
-# -- Compiling module divisor_9bits
-# -- Compiling module numero_Final_9b
-# -- Compiling module integrador
-# -- Compiling module extensao_pra_24bits
-# -- Compiling module registrador_8b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
 # -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
 # -- Compiling module detector_de_borda
 # -- Compiling module ff_D
-# -- Compiling module somador_16bits
-# -- Compiling module produtos_parciais_16x8
-# -- Compiling module multiplicador_16x8
-# -- Compiling module numero_Final_16b
-# -- Compiling module multiplicador_16x8_sinalizado
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# ** Error (suppressible): multiplicador_22x11_sinalizado.v(310): (vlog-2388) 'c10_0' already declared in this scope (multiplicador_22x11_sinalizado) at multiplicador_22x11_sinalizado.v(297).
+# ** Error (suppressible): multiplicador_22x11_sinalizado.v(310): (vlog-2388) 'c10_1' already declared in this scope (multiplicador_22x11_sinalizado) at multiplicador_22x11_sinalizado.v(298).
+# ** Error (suppressible): multiplicador_22x11_sinalizado.v(310): (vlog-2388) 'c10_2' already declared in this scope (multiplicador_22x11_sinalizado) at multiplicador_22x11_sinalizado.v(299).
+# ** Error (suppressible): multiplicador_22x11_sinalizado.v(310): (vlog-2388) 'c10_3' already declared in this scope (multiplicador_22x11_sinalizado) at multiplicador_22x11_sinalizado.v(300).
+# ** Error (suppressible): multiplicador_22x11_sinalizado.v(310): (vlog-2388) 'c10_4' already declared in this scope (multiplicador_22x11_sinalizado) at multiplicador_22x11_sinalizado.v(301).
+# ** Error (suppressible): multiplicador_22x11_sinalizado.v(310): (vlog-2388) 'c10_5' already declared in this scope (multiplicador_22x11_sinalizado) at multiplicador_22x11_sinalizado.v(302).
+# ** Error (suppressible): multiplicador_22x11_sinalizado.v(310): (vlog-2388) 'c10_6' already declared in this scope (multiplicador_22x11_sinalizado) at multiplicador_22x11_sinalizado.v(303).
+# ** Error (suppressible): multiplicador_22x11_sinalizado.v(310): (vlog-2388) 'c10_7' already declared in this scope (multiplicador_22x11_sinalizado) at multiplicador_22x11_sinalizado.v(304).
+# ** Error (suppressible): multiplicador_22x11_sinalizado.v(310): (vlog-2388) 'c10_8' already declared in this scope (multiplicador_22x11_sinalizado) at multiplicador_22x11_sinalizado.v(305).
+# ** Error (suppressible): multiplicador_22x11_sinalizado.v(310): (vlog-2388) 'c10_9' already declared in this scope (multiplicador_22x11_sinalizado) at multiplicador_22x11_sinalizado.v(306).
+# ** Error (suppressible): multiplicador_22x11_sinalizado.v(310): (vlog-2388) 'c10_10' already declared in this scope (multiplicador_22x11_sinalizado) at multiplicador_22x11_sinalizado.v(307).
+# ** Error (suppressible): multiplicador_22x11_sinalizado.v(310): (vlog-2388) 'c10_11' already declared in this scope (multiplicador_22x11_sinalizado) at multiplicador_22x11_sinalizado.v(308).
+# -- Compiling module multiplicador_8x11_sinalizado
 # -- Compiling module multiplicador_8x8_sinalizado
-# -- Compiling module numero_Final_8b
-# -- Compiling module complementoDe2_16bits
 # -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
 # -- Compiling module mux_2x1
-# -- Compiling module adder18
-# -- Compiling module sub18
-# -- Compiling module sqrt_stage
-# -- Compiling module raiz_Quadrada
-# -- Compiling module seletor_xy
-# -- Compiling module mux_4x1
-# -- Compiling module mux_4x1_antigo_1bit
+# -- Compiling module registrador_8b
 # -- Compiling module somador_completo
 # -- Compiling module meio_somador
-# -- Compiling module tb_calcula_x1
-# -- Compiling module tb_calcula_x2
-# -- Compiling module tb_integrador
-# 
-# Top level modules:
-# 	seletor_xy
-# 	tb_calcula_x1
-# 	tb_calcula_x2
-# 	tb_integrador
-# End time: 22:00:18 on Oct 07,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vsim -voptargs="+acc" work.tb_integrador
-# vsim -voptargs=""+acc"" work.tb_integrador 
-# Start time: 22:00:20 on Oct 07,2026
-# Loading work.tb_integrador
-# Loading work.integrador
-# Loading work.detector_de_borda
-# Loading work.ff_D
-# Loading work.contador_2b
-# Loading work.ff_T
-# Loading work.decoder_abc
-# Loading work.registrador_8b
-# Loading work.mux_2x1
-# Loading work.calculo_delta
-# Loading work.multiplicador_8x8_sinalizado
-# Loading work.numero_Final_8b
-# Loading work.complementoDe2_8bits
-# Loading work.somador_completo
-# Loading work.multiplicador_8x8
-# Loading work.meio_somador
-# Loading work.complementoDe2_16bits
-# Loading work.subtrator_18bits
-# Loading work.calcula_x1
-# Loading work.complementoDe2_9bits
-# Loading work.raiz_Quadrada
-# Loading work.sqrt_stage
-# Loading work.adder18
-# Loading work.sub18
-# Loading work.divisor_9x9_sinalizado
-# Loading work.numero_Final_9b
-# Loading work.divisor_9bits
-# Loading work.divisor
-# Loading work.subtrator
-# Loading sv_std.std
-# Loading work.calcula_x2
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
+# End time: 20:48:12 on Nov 09,2026, Elapsed time: 0:00:00
+# Errors: 12, Warnings: 0
+# B:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+vsim -voptargs="+acc" work.tb_calcula_y
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 20:48:12 on Nov 09,2026
+# Loading work.tb_calcula_y
 # Loading work.calcula_y
-# Loading work.multiplicador_16x8_sinalizado
-# Loading work.numero_Final_16b
-# Loading work.somador_16bits
-# Loading work.multiplicador_16x8
-# Loading work.produtos_parciais_16x8
-# Loading work.complementoDe2_24bits
-# Loading work.somador_24b
-# Loading work.extensao_pra_24bits
-# Loading work.bin_pra_decimal
-# Loading work.double_dabble_stage
-# Loading work.ajuste_bcd
-# Loading work.bcd_maior_igual_5
-# Loading work.somador_4bits
-# Loading work.mux2_1_4bits
-# Loading work.bcd_to_7seg
-# Loading work.mux_4x1
-# ** Warning: Design size of 10128 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# Loading work.multiplicador_11x11_sinalizado
+# Loading work.somador_completo
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
 add wave -r /*
 run -all
-# 
-# ==================================================
-#    INICIANDO GRAVAÇÃO DOS REGS (a, b, c)
-# ==================================================
-# [40000 ns] Configurando SW para 'a' = -1 (0xFF)
-# [140000 ns] Configurando SW para 'b' = -10 (0xF6)
-# [240000 ns] Configurando SW para 'c' = -3 (0xFD)
-# 
-# ==================================================
-#    LEITURA DAS SAÍDAS NOS DISPLAYS NOS MUXES
-# ==================================================
-# [340000 ns] Ajustando entrada SW (x) = -2 (0xFE)
-# 
-# [350000 ns] Seletor:      X  (sel=00)
-# Display (s5..s0):       5    
-# ---------------------------------------
-# [360000 ns] Seletor:      Y  (sel=01)
-# Display (s5..s0):            
-# ---------------------------------------
-# [370000 ns] Seletor:      X1 (sel=10)
-# Display (s5..s0):            
-# ---------------------------------------
-# [380000 ns] Seletor:      X2 (sel=11)
-# Display (s5..s0):            
-# ---------------------------------------
-# ** Note: $finish    : tb_integrador.v(131)
-#    Time: 430 ns  Iteration: 0  Instance: /tb_integrador
+# Iniciando a simulacao do calcula_y...
+# Tempo	 x		 a		 b		 c		 | y (Decimal)		 Overflow	 Cout
+# -----------------------------------------------------------------------------------------
+# 10000	     3	    2	    3	    1	 |   266469148		 0		 0
+# 20000	    -2	    1	   -3	    5	 |   265164047		 0		 0
+# 30000	     0	    5	    7	   10	 |   267515658		 0		 0
+# 40000	    10	    3	   -4	   20	 |   267515416		 0		 0
+# -----------------------------------------------------------------------------------------
+# Simulacao concluida com sucesso!
+# ** Note: $finish    : tb_calcula_y.v(72)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_calcula_y
 # 1
-# Break in Module tb_integrador at tb_integrador.v line 131
+# Break in Module tb_calcula_y at tb_calcula_y.v line 72
 
-# Compile of calcula_x2.sv was successful.
-# Compile of divisor_9bits.sv was successful.
-# Compile of tb_calcula_y.sv was successful.
-# Compile of bcd_to_7seg.v was successful.
-# Compile of bin_pra_decimal.v was successful.
-# Compile of calcula_x1.v was successful.
+# Compile of calcula_vertices.v was successful.
+# Compile of calcula_y.sv was successful.
 # Compile of calcula_y.v was successful.
-# Compile of calculo_delta.v was successful.
+# Compile of calcula_y_linha.v was successful.
 # Compile of complementoDe2_8bits.v was successful.
+# Compile of complementoDe2_16bits.v was successful.
+# Compile of complementoDe2_24bits.v was successful.
 # Compile of contador_2b.v was successful.
-# Compile of divisor_9x9_sinalizado.v was successful.
-# Compile of integrador.v was successful.
-# Compile of multiplicador_8x8.v was successful.
+# Compile of contador_3b.v was successful.
+# Compile of contador_640.v was successful.
+# Compile of decoder_abc.v was successful.
+# Compile of desenha_plano_cartesiano.v was successful.
+# Compile of detector_de_borda.v was successful.
+# Compile of ff_D.v was successful.
+# Compile of ff_T.v was successful.
+# Compile of integra_teste.v was successful.
+# Compile of maquina_central.v was successful.
+# Compile of maquina_VGA.v was successful.
 # Compile of multiplicador_8x8_sinalizado.v was successful.
-# Compile of multiplicador_16x8.v was successful.
+# Compile of multiplicador_8x11_sinalizado.v was successful.
+# Compile of multiplicador_8x22_sinalizado.sv was successful.
+# Compile of multiplicador_11x11_sinalizado.v was successful.
+# Compile of multiplicador_16x8_sinalizado.sv was successful.
+# Compile of multiplicador_16x11_sinalizado.v was successful.
+# Compile of multiplicador_22x11_sinalizado.v was successful.
 # Compile of mux_2x1.v was successful.
-# Compile of raiz_Quadrada.v was successful.
-# Compile of seletor_xy.v was successful.
+# Compile of registrador_8b.v was successful.
 # Compile of somador_completo.v was successful.
-# Compile of tb_calcula_x1.v was successful.
-# Compile of tb_calcula_x2.v was successful.
-# Compile of tb_integrador.v was successful.
-# 22 compiles, 0 failed with no errors.
+# Compile of tb_calcula_y.v was successful.
+# Compile of vga_sync.v was successful.
+# 30 compiles, 0 failed with no errors.
 vlog *.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:10:08 on Oct 07,2026
-# vlog -reportprogress 300 bcd_to_7seg.v bin_pra_decimal.v calcula_x1.v calcula_y.v calculo_delta.v complementoDe2_8bits.v contador_2b.v divisor_9x9_sinalizado.v integrador.v multiplicador_16x8.v multiplicador_8x8.v multiplicador_8x8_sinalizado.v mux_2x1.v raiz_Quadrada.v seletor_xy.v somador_completo.v tb_calcula_x1.v tb_calcula_x2.v tb_integrador.v 
-# -- Compiling module bcd_to_7seg
-# -- Compiling module bcd_maior_igual_5
-# -- Compiling module somador_4bits
-# -- Compiling module mux2_1_4bits
-# -- Compiling module ajuste_bcd
-# -- Compiling module double_dabble_stage
-# -- Compiling module bin_pra_decimal
-# -- Compiling module calcula_x1
-# -- Compiling module complementoDe2_9bits
+# Start time: 20:52:23 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
 # -- Compiling module calcula_y
-# -- Compiling module somador_24b
-# -- Compiling module calculo_delta
-# -- Compiling module subtrator_18bits
-# -- Compiling module complementoDe2_8bits
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
 # -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
 # -- Compiling module contador_2b
-# -- Compiling module ff_T
-# -- Compiling module divisor_9x9_sinalizado
-# -- Compiling module subtrator
-# -- Compiling module divisor
-# -- Compiling module divisor_9bits
-# -- Compiling module numero_Final_9b
-# -- Compiling module integrador
-# -- Compiling module extensao_pra_24bits
-# -- Compiling module registrador_8b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
 # -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
 # -- Compiling module detector_de_borda
 # -- Compiling module ff_D
-# -- Compiling module somador_16bits
-# -- Compiling module produtos_parciais_16x8
-# -- Compiling module multiplicador_16x8
-# -- Compiling module numero_Final_16b
-# -- Compiling module multiplicador_16x8_sinalizado
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
 # -- Compiling module multiplicador_8x8_sinalizado
-# -- Compiling module numero_Final_8b
-# -- Compiling module complementoDe2_16bits
 # -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
 # -- Compiling module mux_2x1
-# -- Compiling module adder18
-# -- Compiling module sub18
-# -- Compiling module sqrt_stage
-# -- Compiling module raiz_Quadrada
-# -- Compiling module seletor_xy
-# -- Compiling module mux_4x1
-# -- Compiling module mux_4x1_antigo_1bit
+# -- Compiling module registrador_8b
 # -- Compiling module somador_completo
 # -- Compiling module meio_somador
-# -- Compiling module tb_calcula_x1
-# -- Compiling module tb_calcula_x2
-# -- Compiling module tb_integrador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
 # 
 # Top level modules:
-# 	seletor_xy
-# 	tb_calcula_x1
-# 	tb_calcula_x2
-# 	tb_integrador
-# End time: 22:10:08 on Oct 07,2026, Elapsed time: 0:00:00
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 20:52:23 on Nov 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim -voptargs="+acc" work.tb_integrador
-# End time: 22:10:10 on Oct 07,2026, Elapsed time: 0:09:50
-# Errors: 0, Warnings: 7
-# vsim -voptargs=""+acc"" work.tb_integrador 
-# Start time: 22:10:10 on Oct 07,2026
-# Loading work.tb_integrador
-# Loading work.integrador
-# Loading work.detector_de_borda
-# Loading work.ff_D
-# Loading work.contador_2b
-# Loading work.ff_T
-# Loading work.decoder_abc
-# Loading work.registrador_8b
-# Loading work.mux_2x1
-# Loading work.calculo_delta
-# Loading work.multiplicador_8x8_sinalizado
-# Loading work.numero_Final_8b
-# Loading work.complementoDe2_8bits
-# Loading work.somador_completo
-# Loading work.multiplicador_8x8
-# Loading work.meio_somador
-# Loading work.complementoDe2_16bits
-# Loading work.subtrator_18bits
-# Loading work.calcula_x1
-# Loading work.complementoDe2_9bits
-# Loading work.raiz_Quadrada
-# Loading work.sqrt_stage
-# Loading work.adder18
-# Loading work.sub18
-# Loading work.divisor_9x9_sinalizado
-# Loading work.numero_Final_9b
-# Loading work.divisor_9bits
-# Loading work.divisor
-# Loading work.subtrator
-# Loading sv_std.std
-# Loading work.calcula_x2
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 20:52:25 on Nov 09,2026, Elapsed time: 0:04:13
+# Errors: 0, Warnings: 8
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 20:52:25 on Nov 09,2026
+# Loading work.tb_calcula_y
 # Loading work.calcula_y
-# Loading work.multiplicador_16x8_sinalizado
-# Loading work.numero_Final_16b
-# Loading work.somador_16bits
-# Loading work.multiplicador_16x8
-# Loading work.produtos_parciais_16x8
-# Loading work.complementoDe2_24bits
-# Loading work.somador_24b
-# Loading work.extensao_pra_24bits
-# Loading work.bin_pra_decimal
-# Loading work.double_dabble_stage
-# Loading work.ajuste_bcd
-# Loading work.bcd_maior_igual_5
-# Loading work.somador_4bits
-# Loading work.mux2_1_4bits
-# Loading work.bcd_to_7seg
-# Loading work.mux_4x1
-# ** Warning: Design size of 10154 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# Loading work.multiplicador_11x11_sinalizado
+# Loading work.somador_completo
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
 add wave -r /*
 run -all
-# 
-# ==================================================
-#    INICIANDO GRAVACAO DOS REGS (a, b, c)
-# ==================================================
-# [145000 ns] Configurando SW para 'a' = -1 (0xFF)
-# [255000 ns] Configurando SW para 'b' = -10 (0xF6)
-# [365000 ns] Configurando SW para 'c' = -3 (0xFD)
-# 
-# ==================================================
-#    LEITURA DAS SAIDAS NOS DISPLAYS
-# ==================================================
-# [475000 ns] Ajustando entrada SW (x) = -2 (0xFE)
-# 
-# [596000 ns] Seletor:      X  (sel=00)
-# Display (s5..s0):           5
-# ---------------------------------------
-# [616000 ns] Seletor:      Y  (sel=01)
-# Display (s5..s0):            
-# ---------------------------------------
-# [636000 ns] Seletor:      X1 (sel=10)
-# Display (s5..s0):            
-# ---------------------------------------
-# [656000 ns] Seletor:      X2 (sel=11)
-# Display (s5..s0):            
-# ---------------------------------------
-# ** Note: $finish    : tb_integrador.v(141)
-#    Time: 706 ns  Iteration: 0  Instance: /tb_integrador
+# Iniciando a simulacao do calcula_y...
+# Tempo	 x		 a		 b		 c		 | y (Decimal)		 Overflow	 Cout
+# -----------------------------------------------------------------------------------------
+# 10000	     3	    2	    3	    1	 |   266469148		 0		 0
+# 20000	    -2	    1	   -3	    5	 |   265164047		 0		 0
+# 30000	     0	    5	    7	   10	 |   267515658		 0		 0
+# 40000	    10	    3	   -4	   20	 |   267515416		 0		 0
+# -----------------------------------------------------------------------------------------
+# Simulacao concluida com sucesso!
+# ** Note: $finish    : tb_calcula_y.v(72)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_calcula_y
 # 1
-# Break in Module tb_integrador at tb_integrador.v line 141
+# Break in Module tb_calcula_y at tb_calcula_y.v line 72
 
+# Compile of calcula_vertices.v was successful.
+# Compile of calcula_y.sv was successful.
+# Compile of calcula_y.v was successful.
+# Compile of calcula_y_linha.v was successful.
+# Compile of complementoDe2_8bits.v was successful.
+# Compile of complementoDe2_16bits.v was successful.
+# Compile of complementoDe2_24bits.v was successful.
+# Compile of contador_2b.v was successful.
+# Compile of contador_3b.v was successful.
+# Compile of contador_640.v was successful.
+# Compile of decoder_abc.v was successful.
+# Compile of desenha_plano_cartesiano.v was successful.
+# Compile of detector_de_borda.v was successful.
+# Compile of ff_D.v was successful.
+# Compile of ff_T.v was successful.
+# Compile of integra_teste.v was successful.
+# Compile of maquina_central.v was successful.
+# Compile of maquina_VGA.v was successful.
+# Compile of multiplicador_8x8_sinalizado.v was successful.
+# Compile of multiplicador_8x11_sinalizado.v was successful.
+# Compile of multiplicador_8x22_sinalizado.sv was successful.
+# Compile of multiplicador_11x11_sinalizado.v was successful.
+# Compile of multiplicador_16x8_sinalizado.sv was successful.
+# Compile of multiplicador_16x11_sinalizado.v was successful.
+# Compile of multiplicador_22x11_sinalizado.v was successful.
+# Compile of mux_2x1.v was successful.
+# Compile of registrador_8b.v was successful.
+# Compile of somador_completo.v was successful.
+# Compile of tb_calcula_y.v was successful.
+# Compile of vga_sync.v was successful.
+# 30 compiles, 0 failed with no errors.
 vlog *.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:14:07 on Oct 07,2026
-# vlog -reportprogress 300 bcd_to_7seg.v bin_pra_decimal.v calcula_x1.v calcula_y.v calculo_delta.v complementoDe2_8bits.v contador_2b.v divisor_9x9_sinalizado.v integrador.v multiplicador_16x8.v multiplicador_8x8.v multiplicador_8x8_sinalizado.v mux_2x1.v raiz_Quadrada.v seletor_xy.v somador_completo.v tb_calcula_x1.v tb_calcula_x2.v tb_integrador.v 
-# -- Compiling module bcd_to_7seg
-# -- Compiling module bcd_maior_igual_5
-# -- Compiling module somador_4bits
-# -- Compiling module mux2_1_4bits
-# -- Compiling module ajuste_bcd
-# -- Compiling module double_dabble_stage
-# -- Compiling module bin_pra_decimal
-# -- Compiling module calcula_x1
-# -- Compiling module complementoDe2_9bits
+# Start time: 20:57:29 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
 # -- Compiling module calcula_y
-# -- Compiling module somador_24b
-# -- Compiling module calculo_delta
-# -- Compiling module subtrator_18bits
-# -- Compiling module complementoDe2_8bits
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
 # -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
 # -- Compiling module contador_2b
-# -- Compiling module ff_T
-# -- Compiling module divisor_9x9_sinalizado
-# -- Compiling module subtrator
-# -- Compiling module divisor
-# -- Compiling module divisor_9bits
-# -- Compiling module numero_Final_9b
-# -- Compiling module integrador
-# -- Compiling module extensao_pra_24bits
-# -- Compiling module registrador_8b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
 # -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
 # -- Compiling module detector_de_borda
 # -- Compiling module ff_D
-# -- Compiling module somador_16bits
-# -- Compiling module produtos_parciais_16x8
-# -- Compiling module multiplicador_16x8
-# -- Compiling module numero_Final_16b
-# -- Compiling module multiplicador_16x8_sinalizado
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
 # -- Compiling module multiplicador_8x8_sinalizado
-# -- Compiling module numero_Final_8b
-# -- Compiling module complementoDe2_16bits
 # -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
 # -- Compiling module mux_2x1
-# -- Compiling module adder18
-# -- Compiling module sub18
-# -- Compiling module sqrt_stage
-# -- Compiling module raiz_Quadrada
-# -- Compiling module seletor_xy
-# -- Compiling module mux_4x1
-# -- Compiling module mux_4x1_antigo_1bit
+# -- Compiling module registrador_8b
 # -- Compiling module somador_completo
 # -- Compiling module meio_somador
-# -- Compiling module tb_calcula_x1
-# -- Compiling module tb_calcula_x2
-# -- Compiling module tb_integrador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
 # 
 # Top level modules:
-# 	seletor_xy
-# 	tb_calcula_x1
-# 	tb_calcula_x2
-# 	tb_integrador
-# End time: 22:14:07 on Oct 07,2026, Elapsed time: 0:00:00
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 20:57:30 on Nov 09,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vsim -voptargs="+acc" work.tb_integrador
-# End time: 22:14:09 on Oct 07,2026, Elapsed time: 0:03:59
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 20:57:39 on Nov 09,2026, Elapsed time: 0:05:14
 # Errors: 0, Warnings: 2
-# vsim -voptargs=""+acc"" work.tb_integrador 
-# Start time: 22:14:09 on Oct 07,2026
-# Loading work.tb_integrador
-# Loading work.integrador
-# Loading work.detector_de_borda
-# Loading work.ff_D
-# Loading work.contador_2b
-# Loading work.ff_T
-# Loading work.decoder_abc
-# Loading work.registrador_8b
-# Loading work.mux_2x1
-# Loading work.calculo_delta
-# Loading work.multiplicador_8x8_sinalizado
-# Loading work.numero_Final_8b
-# Loading work.complementoDe2_8bits
-# Loading work.somador_completo
-# Loading work.multiplicador_8x8
-# Loading work.meio_somador
-# Loading work.complementoDe2_16bits
-# Loading work.subtrator_18bits
-# Loading work.calcula_x1
-# Loading work.complementoDe2_9bits
-# Loading work.raiz_Quadrada
-# Loading work.sqrt_stage
-# Loading work.adder18
-# Loading work.sub18
-# Loading work.divisor_9x9_sinalizado
-# Loading work.numero_Final_9b
-# Loading work.divisor_9bits
-# Loading work.divisor
-# Loading work.subtrator
-# Loading sv_std.std
-# Loading work.calcula_x2
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 20:57:40 on Nov 09,2026
+# Loading work.tb_calcula_y
 # Loading work.calcula_y
-# Loading work.multiplicador_16x8_sinalizado
-# Loading work.numero_Final_16b
-# Loading work.somador_16bits
-# Loading work.multiplicador_16x8
-# Loading work.produtos_parciais_16x8
-# Loading work.complementoDe2_24bits
-# Loading work.somador_24b
-# Loading work.extensao_pra_24bits
-# Loading work.bin_pra_decimal
-# Loading work.double_dabble_stage
-# Loading work.ajuste_bcd
-# Loading work.bcd_maior_igual_5
-# Loading work.somador_4bits
-# Loading work.mux2_1_4bits
-# Loading work.bcd_to_7seg
-# Loading work.mux_4x1
-# ** Warning: Design size of 10154 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# Loading work.multiplicador_11x11_sinalizado
+# Loading work.somador_completo
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
 add wave -r /*
 run -all
-# 
-# ==================================================
-#    INICIANDO GRAVACAO DOS REGS (a, b, c)
-# ==================================================
-# [145000 ns] Configurando SW para 'a' = -1 (0xFF)
-# [255000 ns] Configurando SW para 'b' = -10 (0xF6)
-# [365000 ns] Configurando SW para 'c' = -3 (0xFD)
-# 
-# ==================================================
-#    LEITURA DAS SAIDAS NOS DISPLAYS
-# ==================================================
-# [475000 ns] Ajustando entrada SW (x) = -2 (0xFE)
-# 
-# [596000 ns] Seletor:      X  (sel=00)
-# Display (s5..s0):           5
-# ---------------------------------------
-# [616000 ns] Seletor:      Y  (sel=01)
-# Display (s5..s0):            
-# ---------------------------------------
-# [636000 ns] Seletor:      X1 (sel=10)
-# Display (s5..s0):            
-# ---------------------------------------
-# [656000 ns] Seletor:      X2 (sel=11)
-# Display (s5..s0):            
-# ---------------------------------------
-# ** Note: $finish    : tb_integrador.v(141)
-#    Time: 706 ns  Iteration: 0  Instance: /tb_integrador
+# Iniciando a simulacao do calcula_y...
+# Tempo	 x		 a		 b		 c		 | y (Decimal)		 Overflow	 Cout
+# -----------------------------------------------------------------------------------------
+# 10000	     3	    2	    3	    1	 |  -1966308		 0		 0
+# 20000	    -2	    1	   -3	    5	 |  -3271409		 0		 0
+# 30000	     0	    5	    7	   10	 |   -919798		 0		 0
+# 40000	    10	    3	   -4	   20	 |   -920040		 0		 0
+# -----------------------------------------------------------------------------------------
+# Simulacao concluida com sucesso!
+# ** Note: $finish    : tb_calcula_y.v(72)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_calcula_y
 # 1
-# Break in Module tb_integrador at tb_integrador.v line 141
+# Break in Module tb_calcula_y at tb_calcula_y.v line 72
 
-reset =vlog *.v
-# ambiguous command name "reset": resetGlobalEvcd resetTime
-vsim -voptargs="+acc" work.tb_integrador
-# End time: 22:16:23 on Oct 07,2026, Elapsed time: 0:02:14
+# Compile of calcula_vertices.v was successful.
+# Compile of calcula_y.sv was successful.
+# Compile of calcula_y.v was successful.
+# Compile of calcula_y_linha.v was successful.
+# Compile of complementoDe2_8bits.v was successful.
+# Compile of complementoDe2_16bits.v was successful.
+# Compile of complementoDe2_24bits.v was successful.
+# Compile of contador_2b.v was successful.
+# Compile of contador_3b.v was successful.
+# Compile of contador_640.v was successful.
+# Compile of decoder_abc.v was successful.
+# Compile of desenha_plano_cartesiano.v was successful.
+# Compile of detector_de_borda.v was successful.
+# Compile of ff_D.v was successful.
+# Compile of ff_T.v was successful.
+# Compile of integra_teste.v was successful.
+# Compile of maquina_central.v was successful.
+# Compile of maquina_VGA.v was successful.
+# Compile of multiplicador_8x8_sinalizado.v was successful.
+# Compile of multiplicador_8x11_sinalizado.v was successful.
+# Compile of multiplicador_8x22_sinalizado.sv was successful.
+# Compile of multiplicador_11x11_sinalizado.v was successful.
+# Compile of multiplicador_16x8_sinalizado.sv was successful.
+# Compile of multiplicador_16x11_sinalizado.v was successful.
+# Compile of multiplicador_22x11_sinalizado.v was successful.
+# Compile of mux_2x1.v was successful.
+# Compile of registrador_8b.v was successful.
+# Compile of somador_completo.v was successful.
+# Compile of tb_calcula_y.v was successful.
+# Compile of vga_sync.v was successful.
+# 30 compiles, 0 failed with no errors.
+vlog *.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:00:47 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
+# -- Compiling module calcula_y
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
+# -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
+# -- Compiling module contador_2b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
+# -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
+# -- Compiling module detector_de_borda
+# -- Compiling module ff_D
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
+# -- Compiling module multiplicador_8x8_sinalizado
+# -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
+# -- Compiling module mux_2x1
+# -- Compiling module registrador_8b
+# -- Compiling module somador_completo
+# -- Compiling module meio_somador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
+# 
+# Top level modules:
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 21:00:47 on Nov 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 21:00:51 on Nov 09,2026, Elapsed time: 0:03:11
 # Errors: 0, Warnings: 2
-# vsim -voptargs=""+acc"" work.tb_integrador 
-# Start time: 22:16:23 on Oct 07,2026
-# Loading work.tb_integrador
-# Loading work.integrador
-# Loading work.detector_de_borda
-# Loading work.ff_D
-# Loading work.contador_2b
-# Loading work.ff_T
-# Loading work.decoder_abc
-# Loading work.registrador_8b
-# Loading work.mux_2x1
-# Loading work.calculo_delta
-# Loading work.multiplicador_8x8_sinalizado
-# Loading work.numero_Final_8b
-# Loading work.complementoDe2_8bits
-# Loading work.somador_completo
-# Loading work.multiplicador_8x8
-# Loading work.meio_somador
-# Loading work.complementoDe2_16bits
-# Loading work.subtrator_18bits
-# Loading work.calcula_x1
-# Loading work.complementoDe2_9bits
-# Loading work.raiz_Quadrada
-# Loading work.sqrt_stage
-# Loading work.adder18
-# Loading work.sub18
-# Loading work.divisor_9x9_sinalizado
-# Loading work.numero_Final_9b
-# Loading work.divisor_9bits
-# Loading work.divisor
-# Loading work.subtrator
-# Loading sv_std.std
-# Loading work.calcula_x2
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 21:00:52 on Nov 09,2026
+# Loading work.tb_calcula_y
 # Loading work.calcula_y
-# Loading work.multiplicador_16x8_sinalizado
-# Loading work.numero_Final_16b
-# Loading work.somador_16bits
-# Loading work.multiplicador_16x8
-# Loading work.produtos_parciais_16x8
-# Loading work.complementoDe2_24bits
-# Loading work.somador_24b
-# Loading work.extensao_pra_24bits
-# Loading work.bin_pra_decimal
-# Loading work.double_dabble_stage
-# Loading work.ajuste_bcd
-# Loading work.bcd_maior_igual_5
-# Loading work.somador_4bits
-# Loading work.mux2_1_4bits
-# Loading work.bcd_to_7seg
-# Loading work.mux_4x1
-# ** Warning: Design size of 10154 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# Loading work.multiplicador_11x11_sinalizado
+# Loading work.somador_completo
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
 add wave -r /*
 run -all
 # 
-# ==================================================
-#    INICIANDO GRAVACAO DOS REGS (a, b, c)
-# ==================================================
-# [145000 ns] Configurando SW para 'a' = -1 (0xFF)
-# [255000 ns] Configurando SW para 'b' = -10 (0xF6)
-# [365000 ns] Configurando SW para 'c' = -3 (0xFD)
+# ========================================================================================================================
+#  Iniciando a simulacao do calcula_y (Valores em Binario)
+# ========================================================================================================================
+# Tempo | x (11b)     | a (8b)   | b (8b)   | c (8b)   | y [29:0] (30b)                 | y [23:0] (24b)           | Ovf Cout
+# ------+-------------+----------+----------+----------+--------------------------------+--------------------------+---------
+#                                    10000 | 00000000011 | 00000010 | 00000011 | 00000001 | 001111111000011111111100011100 | 111000011111111100011100 |  0    0
+#                                    20000 | 11111111110 | 00000001 | 11111101 | 00000101 | 001111110011100001010100001111 | 110011100001010100001111 |  0    0
+#                                    30000 | 00000000000 | 00000101 | 00000111 | 00001010 | 001111111100011111011100001010 | 111100011111011100001010 |  0    0
+#                                    40000 | 00000001010 | 00000011 | 11111100 | 00010100 | 001111111100011111011000011000 | 111100011111011000011000 |  0    0
+# ========================================================================================================================
 # 
-# ==================================================
-#    LEITURA DAS SAIDAS NOS DISPLAYS
-# ==================================================
-# [475000 ns] Ajustando entrada SW (x) = -2 (0xFE)
-# 
-# [596000 ns] Seletor:      X  (sel=00)
-# Display (s5..s0):           5
-# ---------------------------------------
-# [616000 ns] Seletor:      Y  (sel=01)
-# Display (s5..s0):            
-# ---------------------------------------
-# [636000 ns] Seletor:      X1 (sel=10)
-# Display (s5..s0):            
-# ---------------------------------------
-# [656000 ns] Seletor:      X2 (sel=11)
-# Display (s5..s0):            
-# ---------------------------------------
-# ** Note: $finish    : tb_integrador.v(141)
-#    Time: 706 ns  Iteration: 0  Instance: /tb_integrador
+# ** Note: $finish    : tb_calcula_y.v(59)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_calcula_y
 # 1
-# Break in Module tb_integrador at tb_integrador.v line 141
+# Break in Module tb_calcula_y at tb_calcula_y.v line 59
 
-# Compile of tb_integrador.v was successful.
-vlog *.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:17:15 on Oct 07,2026
-# vlog -reportprogress 300 bcd_to_7seg.v bin_pra_decimal.v calcula_x1.v calcula_y.v calculo_delta.v complementoDe2_8bits.v contador_2b.v divisor_9x9_sinalizado.v integrador.v multiplicador_16x8.v multiplicador_8x8.v multiplicador_8x8_sinalizado.v mux_2x1.v raiz_Quadrada.v seletor_xy.v somador_completo.v tb_calcula_x1.v tb_calcula_x2.v tb_integrador.v 
-# -- Compiling module bcd_to_7seg
-# -- Compiling module bcd_maior_igual_5
-# -- Compiling module somador_4bits
-# -- Compiling module mux2_1_4bits
-# -- Compiling module ajuste_bcd
-# -- Compiling module double_dabble_stage
-# -- Compiling module bin_pra_decimal
-# -- Compiling module calcula_x1
-# -- Compiling module complementoDe2_9bits
-# -- Compiling module calcula_y
-# -- Compiling module somador_24b
-# -- Compiling module calculo_delta
-# -- Compiling module subtrator_18bits
-# -- Compiling module complementoDe2_8bits
-# -- Compiling module complementoDe2_24bits
-# -- Compiling module contador_2b
-# -- Compiling module ff_T
-# -- Compiling module divisor_9x9_sinalizado
-# -- Compiling module subtrator
-# -- Compiling module divisor
-# -- Compiling module divisor_9bits
-# -- Compiling module numero_Final_9b
-# -- Compiling module integrador
-# -- Compiling module extensao_pra_24bits
-# -- Compiling module registrador_8b
-# -- Compiling module decoder_abc
-# -- Compiling module detector_de_borda
-# -- Compiling module ff_D
-# -- Compiling module somador_16bits
-# -- Compiling module produtos_parciais_16x8
-# -- Compiling module multiplicador_16x8
-# -- Compiling module numero_Final_16b
-# -- Compiling module multiplicador_16x8_sinalizado
-# -- Compiling module multiplicador_8x8_sinalizado
-# -- Compiling module numero_Final_8b
-# -- Compiling module complementoDe2_16bits
-# -- Compiling module multiplicador_8x8
-# -- Compiling module mux_2x1
-# -- Compiling module adder18
-# -- Compiling module sub18
-# -- Compiling module sqrt_stage
-# -- Compiling module raiz_Quadrada
-# -- Compiling module seletor_xy
-# -- Compiling module mux_4x1
-# -- Compiling module mux_4x1_antigo_1bit
-# -- Compiling module somador_completo
-# -- Compiling module meio_somador
-# -- Compiling module tb_calcula_x1
-# -- Compiling module tb_calcula_x2
-# -- Compiling module tb_integrador
-# 
-# Top level modules:
-# 	seletor_xy
-# 	tb_calcula_x1
-# 	tb_calcula_x2
-# 	tb_integrador
-# End time: 22:17:15 on Oct 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim -voptargs="+acc" work.tb_integrador
-# End time: 22:17:18 on Oct 07,2026, Elapsed time: 0:00:55
-# Errors: 0, Warnings: 3
-# vsim -voptargs=""+acc"" work.tb_integrador 
-# Start time: 22:17:18 on Oct 07,2026
-# Loading work.tb_integrador
-# Loading work.integrador
-# Loading work.detector_de_borda
-# Loading work.ff_D
-# Loading work.contador_2b
-# Loading work.ff_T
-# Loading work.decoder_abc
-# Loading work.registrador_8b
-# Loading work.mux_2x1
-# Loading work.calculo_delta
-# Loading work.multiplicador_8x8_sinalizado
-# Loading work.numero_Final_8b
-# Loading work.complementoDe2_8bits
-# Loading work.somador_completo
-# Loading work.multiplicador_8x8
-# Loading work.meio_somador
-# Loading work.complementoDe2_16bits
-# Loading work.subtrator_18bits
-# Loading work.calcula_x1
-# Loading work.complementoDe2_9bits
-# Loading work.raiz_Quadrada
-# Loading work.sqrt_stage
-# Loading work.adder18
-# Loading work.sub18
-# Loading work.divisor_9x9_sinalizado
-# Loading work.numero_Final_9b
-# Loading work.divisor_9bits
-# Loading work.divisor
-# Loading work.subtrator
-# Loading sv_std.std
-# Loading work.calcula_x2
-# Loading work.calcula_y
-# Loading work.multiplicador_16x8_sinalizado
-# Loading work.numero_Final_16b
-# Loading work.somador_16bits
-# Loading work.multiplicador_16x8
-# Loading work.produtos_parciais_16x8
-# Loading work.complementoDe2_24bits
-# Loading work.somador_24b
-# Loading work.extensao_pra_24bits
-# Loading work.bin_pra_decimal
-# Loading work.double_dabble_stage
-# Loading work.ajuste_bcd
-# Loading work.bcd_maior_igual_5
-# Loading work.somador_4bits
-# Loading work.mux2_1_4bits
-# Loading work.bcd_to_7seg
-# Loading work.mux_4x1
-# ** Warning: Design size of 10154 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
-add wave -r /*
-run -all
-# 
-# ==================================================
-#    INICIANDO GRAVACAO DOS REGS (a, b, c)
-# ==================================================
-# [145000 ns] Configurando SW para 'a' = -1 (0xFF)
-# [255000 ns] Configurando SW para 'b' = -10 (0xF6)
-# [365000 ns] Configurando SW para 'c' = -3 (0xFD)
-# 
-# ==================================================
-#    LEITURA DAS SAIDAS NOS DISPLAYS
-# ==================================================
-# [475000 ns] Ajustando entrada SW (x) = -2 (0xFE)
-# 
-# [596000 ns] Seletor:      X  (sel=00)
-# Display (s5..s0):           5
-# ---------------------------------------
-# [616000 ns] Seletor:      Y  (sel=01)
-# Display (s5..s0):            
-# ---------------------------------------
-# [636000 ns] Seletor:      X1 (sel=10)
-# Display (s5..s0):            
-# ---------------------------------------
-# [656000 ns] Seletor:      X2 (sel=11)
-# Display (s5..s0):            
-# ---------------------------------------
-# ** Note: $finish    : tb_integrador.v(141)
-#    Time: 706 ns  Iteration: 0  Instance: /tb_integrador
-# 1
-# Break in Module tb_integrador at tb_integrador.v line 141
-
-# Compile of calcula_x2.sv was successful.
-# Compile of divisor_9bits.sv was successful.
-# Compile of tb_calcula_y.sv was successful.
-# Compile of bcd_to_7seg.v was successful.
-# Compile of bin_pra_decimal.v was successful.
-# Compile of calcula_x1.v was successful.
 # Compile of calcula_y.v was successful.
-# Compile of calculo_delta.v was successful.
-# Compile of complementoDe2_8bits.v was successful.
-# Compile of contador_2b.v was successful.
-# Compile of divisor_9x9_sinalizado.v was successful.
-# Compile of integrador.v was successful.
-# Compile of multiplicador_8x8.v was successful.
-# Compile of multiplicador_8x8_sinalizado.v was successful.
-# Compile of multiplicador_16x8.v was successful.
-# Compile of mux_2x1.v was successful.
-# Compile of raiz_Quadrada.v was successful.
-# Compile of seletor_xy.v was successful.
-# Compile of somador_completo.v was successful.
-# Compile of tb_calcula_x1.v was successful.
-# Compile of tb_calcula_x2.v was successful.
-# Compile of tb_integrador.v was successful.
-# 22 compiles, 0 failed with no errors.
 vlog *.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:22:47 on Oct 07,2026
-# vlog -reportprogress 300 bcd_to_7seg.v bin_pra_decimal.v calcula_x1.v calcula_y.v calculo_delta.v complementoDe2_8bits.v contador_2b.v divisor_9x9_sinalizado.v integrador.v multiplicador_16x8.v multiplicador_8x8.v multiplicador_8x8_sinalizado.v mux_2x1.v raiz_Quadrada.v seletor_xy.v somador_completo.v tb_calcula_x1.v tb_calcula_x2.v tb_integrador.v 
-# -- Compiling module bcd_to_7seg
-# -- Compiling module bcd_maior_igual_5
-# -- Compiling module somador_4bits
-# -- Compiling module mux2_1_4bits
-# -- Compiling module ajuste_bcd
-# -- Compiling module double_dabble_stage
-# -- Compiling module bin_pra_decimal
-# -- Compiling module calcula_x1
-# -- Compiling module complementoDe2_9bits
+# Start time: 21:06:38 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
 # -- Compiling module calcula_y
-# -- Compiling module somador_24b
-# -- Compiling module calculo_delta
-# -- Compiling module subtrator_18bits
-# -- Compiling module complementoDe2_8bits
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
 # -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
 # -- Compiling module contador_2b
-# -- Compiling module ff_T
-# -- Compiling module divisor_9x9_sinalizado
-# -- Compiling module subtrator
-# -- Compiling module divisor
-# -- Compiling module divisor_9bits
-# -- Compiling module numero_Final_9b
-# -- Compiling module integrador
-# -- Compiling module extensao_pra_24bits
-# -- Compiling module registrador_8b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
 # -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
 # -- Compiling module detector_de_borda
 # -- Compiling module ff_D
-# -- Compiling module somador_16bits
-# -- Compiling module produtos_parciais_16x8
-# -- Compiling module multiplicador_16x8
-# -- Compiling module numero_Final_16b
-# -- Compiling module multiplicador_16x8_sinalizado
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
 # -- Compiling module multiplicador_8x8_sinalizado
-# -- Compiling module numero_Final_8b
-# -- Compiling module complementoDe2_16bits
 # -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
 # -- Compiling module mux_2x1
-# -- Compiling module adder18
-# -- Compiling module sub18
-# -- Compiling module sqrt_stage
-# -- Compiling module raiz_Quadrada
-# -- Compiling module seletor_xy
-# -- Compiling module mux_4x1
-# -- Compiling module mux_4x1_antigo_1bit
+# -- Compiling module registrador_8b
 # -- Compiling module somador_completo
 # -- Compiling module meio_somador
-# -- Compiling module tb_calcula_x1
-# -- Compiling module tb_calcula_x2
-# -- Compiling module tb_integrador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
 # 
 # Top level modules:
-# 	seletor_xy
-# 	tb_calcula_x1
-# 	tb_calcula_x2
-# 	tb_integrador
-# End time: 22:22:47 on Oct 07,2026, Elapsed time: 0:00:00
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 21:06:38 on Nov 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim -voptargs="+acc" work.tb_integrador
-# End time: 22:22:49 on Oct 07,2026, Elapsed time: 0:05:31
-# Errors: 0, Warnings: 3
-# vsim -voptargs=""+acc"" work.tb_integrador 
-# Start time: 22:22:49 on Oct 07,2026
-# Loading work.tb_integrador
-# Loading work.integrador
-# Loading work.detector_de_borda
-# Loading work.ff_D
-# Loading work.contador_2b
-# Loading work.ff_T
-# Loading work.decoder_abc
-# Loading work.registrador_8b
-# Loading work.mux_2x1
-# Loading work.calculo_delta
-# Loading work.multiplicador_8x8_sinalizado
-# Loading work.numero_Final_8b
-# Loading work.complementoDe2_8bits
-# Loading work.somador_completo
-# Loading work.multiplicador_8x8
-# Loading work.meio_somador
-# Loading work.complementoDe2_16bits
-# Loading work.subtrator_18bits
-# Loading work.calcula_x1
-# Loading work.complementoDe2_9bits
-# Loading work.raiz_Quadrada
-# Loading work.sqrt_stage
-# Loading work.adder18
-# Loading work.sub18
-# Loading work.divisor_9x9_sinalizado
-# Loading work.numero_Final_9b
-# Loading work.divisor_9bits
-# Loading work.divisor
-# Loading work.subtrator
-# Loading sv_std.std
-# Loading work.calcula_x2
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 21:06:40 on Nov 09,2026, Elapsed time: 0:05:48
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 21:06:40 on Nov 09,2026
+# Loading work.tb_calcula_y
 # Loading work.calcula_y
-# Loading work.multiplicador_16x8_sinalizado
-# Loading work.numero_Final_16b
-# Loading work.somador_16bits
-# Loading work.multiplicador_16x8
-# Loading work.produtos_parciais_16x8
-# Loading work.complementoDe2_24bits
-# Loading work.somador_24b
-# Loading work.extensao_pra_24bits
-# Loading work.bin_pra_decimal
-# Loading work.double_dabble_stage
-# Loading work.ajuste_bcd
-# Loading work.bcd_maior_igual_5
-# Loading work.somador_4bits
-# Loading work.mux2_1_4bits
-# Loading work.bcd_to_7seg
-# Loading work.mux_4x1
-# ** Warning: Design size of 10154 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# Loading work.multiplicador_11x11_sinalizado
+# Loading work.somador_completo
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
 add wave -r /*
 run -all
 # 
-# ==================================================
-#    INICIANDO GRAVACAO DOS REGS (a, b, c)
-# ==================================================
-# [145000 ns] Configurando SW para 'a' = -1 (0xFF)
-# [255000 ns] Configurando SW para 'b' = -10 (0xF6)
-# [365000 ns] Configurando SW para 'c' = -3 (0xFD)
+# ========================================================================================================================
+#  Iniciando a simulacao do calcula_y (Valores em Binario)
+# ========================================================================================================================
+# Tempo | x (11b)     | a (8b)   | b (8b)   | c (8b)   | y [29:0] (30b)                 | y [23:0] (24b)           | Ovf Cout
+# ------+-------------+----------+----------+----------+--------------------------------+--------------------------+---------
+#                                    10000 | 00000000011 | 00000010 | 00000011 | 00000001 | 001111111000011111111100011100 | 111000011111111100011100 |  0    0
+#                                    20000 | 11111111110 | 00000001 | 11111101 | 00000101 | 001111110011100001010100001111 | 110011100001010100001111 |  0    0
+#                                    30000 | 00000000000 | 00000101 | 00000111 | 00001010 | 001111111100011111011100001010 | 111100011111011100001010 |  0    0
+#                                    40000 | 00000001010 | 00000011 | 11111100 | 00010100 | 001111111100011111011000011000 | 111100011111011000011000 |  0    0
+# ========================================================================================================================
 # 
-# ==================================================
-#    LEITURA DAS SAIDAS NOS DISPLAYS
-# ==================================================
-# [475000 ns] Ajustando entrada SW (x) = -2 (0xFE)
-# 
-# [596000 ns] Seletor:      X  (sel=00)
-# Display (s5..s0): ? ? ? ? ? 5
-# ---------------------------------------
-# [616000 ns] Seletor:      Y  (sel=01)
-# Display (s5..s0): ? ? ? ? ? ?
-# ---------------------------------------
-# [636000 ns] Seletor:      X1 (sel=10)
-# Display (s5..s0): ? ? ? ? ? ?
-# ---------------------------------------
-# [656000 ns] Seletor:      X2 (sel=11)
-# Display (s5..s0): ? ? ? ? ? ?
-# ---------------------------------------
-# ** Note: $finish    : tb_integrador.v(142)
-#    Time: 706 ns  Iteration: 0  Instance: /tb_integrador
+# ** Note: $finish    : tb_calcula_y.v(59)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_calcula_y
 # 1
-# Break in Module tb_integrador at tb_integrador.v line 142
+# Break in Module tb_calcula_y at tb_calcula_y.v line 59
 
-# Compile of calcula_x2.sv was successful.
-# Compile of divisor_9bits.sv was successful.
-# Compile of tb_calcula_y.sv was successful.
-# Compile of bcd_to_7seg.v was successful.
-# Compile of bin_pra_decimal.v was successful.
-# Compile of calcula_x1.v was successful.
+vlog -recompile *.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# ** Error (suppressible): (vlog-1902) Option "-recompile" is not a valid option for this tool.
+# Use the -help option for complete vlog usage.
+# Errors: 1, Warnings: 0
+# B:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog *.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:08:57 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
+# -- Compiling module calcula_y
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
+# -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
+# -- Compiling module contador_2b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
+# -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
+# -- Compiling module detector_de_borda
+# -- Compiling module ff_D
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
+# -- Compiling module multiplicador_8x8_sinalizado
+# -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
+# -- Compiling module mux_2x1
+# -- Compiling module registrador_8b
+# -- Compiling module somador_completo
+# -- Compiling module meio_somador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
+# 
+# Top level modules:
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 21:08:57 on Nov 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 21:09:00 on Nov 09,2026, Elapsed time: 0:02:20
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 21:09:00 on Nov 09,2026
+# Loading work.tb_calcula_y
+# Loading work.calcula_y
+# Loading work.multiplicador_11x11_sinalizado
+# Loading work.somador_completo
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
+add wave -r /*
+run -all
+# 
+# ========================================================================================================================
+#  Iniciando a simulacao do calcula_y (Valores em Binario)
+# ========================================================================================================================
+# Tempo | x (11b)     | a (8b)   | b (8b)   | c (8b)   | y [29:0] (30b)                 | y [23:0] (24b)           | Ovf Cout
+# ------+-------------+----------+----------+----------+--------------------------------+--------------------------+---------
+#                                    10000 | 00000000011 | 00000010 | 00000011 | 00000001 | 001111111000011111111100011100 | 111000011111111100011100 |  0    0
+#                                    20000 | 11111111110 | 00000001 | 11111101 | 00000101 | 001111110011100001010100001111 | 110011100001010100001111 |  0    0
+#                                    30000 | 00000000000 | 00000101 | 00000111 | 00001010 | 001111111100011111011100001010 | 111100011111011100001010 |  0    0
+#                                    40000 | 00000001010 | 00000011 | 11111100 | 00010100 | 001111111100011111011000011000 | 111100011111011000011000 |  0    0
+# ========================================================================================================================
+# 
+# ** Note: $finish    : tb_calcula_y.v(59)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_calcula_y
+# 1
+# Break in Module tb_calcula_y at tb_calcula_y.v line 59
+
 # Compile of calcula_y.v was successful.
-# Compile of calculo_delta.v was successful.
-# Compile of complementoDe2_8bits.v was successful.
-# Compile of contador_2b.v was successful.
-# Compile of divisor_9x9_sinalizado.v was successful.
-# Compile of integrador.v was successful.
-# Compile of multiplicador_8x8.v was successful.
-# Compile of multiplicador_8x8_sinalizado.v was successful.
-# Compile of multiplicador_16x8.v was successful.
-# Compile of mux_2x1.v was successful.
-# Compile of raiz_Quadrada.v was successful.
-# Compile of seletor_xy.v was successful.
-# Compile of somador_completo.v was successful.
-# Compile of tb_calcula_x1.v was successful.
-# Compile of tb_calcula_x2.v was successful.
-# Compile of tb_integrador.v was successful.
-# 22 compiles, 0 failed with no errors.
 vlog *.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:30:23 on Oct 07,2026
-# vlog -reportprogress 300 bcd_to_7seg.v bin_pra_decimal.v calcula_x1.v calcula_y.v calculo_delta.v complementoDe2_8bits.v contador_2b.v divisor_9x9_sinalizado.v integrador.v multiplicador_16x8.v multiplicador_8x8.v multiplicador_8x8_sinalizado.v mux_2x1.v raiz_Quadrada.v seletor_xy.v somador_completo.v tb_calcula_x1.v tb_calcula_x2.v tb_integrador.v 
-# -- Compiling module bcd_to_7seg
-# -- Compiling module bcd_maior_igual_5
-# -- Compiling module somador_4bits
-# -- Compiling module mux2_1_4bits
-# -- Compiling module ajuste_bcd
-# -- Compiling module double_dabble_stage
-# -- Compiling module bin_pra_decimal
-# -- Compiling module calcula_x1
-# -- Compiling module complementoDe2_9bits
+# Start time: 21:10:55 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
 # -- Compiling module calcula_y
-# -- Compiling module somador_24b
-# -- Compiling module calculo_delta
-# -- Compiling module subtrator_18bits
-# -- Compiling module complementoDe2_8bits
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
 # -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
 # -- Compiling module contador_2b
-# -- Compiling module ff_T
-# -- Compiling module divisor_9x9_sinalizado
-# -- Compiling module subtrator
-# -- Compiling module divisor
-# -- Compiling module divisor_9bits
-# -- Compiling module numero_Final_9b
-# -- Compiling module integrador
-# -- Compiling module extensao_pra_24bits
-# -- Compiling module registrador_8b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
 # -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
 # -- Compiling module detector_de_borda
 # -- Compiling module ff_D
-# -- Compiling module somador_16bits
-# -- Compiling module produtos_parciais_16x8
-# -- Compiling module multiplicador_16x8
-# -- Compiling module numero_Final_16b
-# -- Compiling module multiplicador_16x8_sinalizado
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
 # -- Compiling module multiplicador_8x8_sinalizado
-# -- Compiling module numero_Final_8b
-# -- Compiling module complementoDe2_16bits
 # -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
 # -- Compiling module mux_2x1
-# -- Compiling module adder18
-# -- Compiling module sub18
-# -- Compiling module sqrt_stage
-# -- Compiling module raiz_Quadrada
-# -- Compiling module seletor_xy
-# -- Compiling module mux_4x1
-# -- Compiling module mux_4x1_antigo_1bit
+# -- Compiling module registrador_8b
 # -- Compiling module somador_completo
 # -- Compiling module meio_somador
-# -- Compiling module tb_calcula_x1
-# -- Compiling module tb_calcula_x2
-# -- Compiling module tb_integrador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
 # 
 # Top level modules:
-# 	seletor_xy
-# 	tb_calcula_x1
-# 	tb_calcula_x2
-# 	tb_integrador
-# End time: 22:30:23 on Oct 07,2026, Elapsed time: 0:00:00
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 21:10:55 on Nov 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim -voptargs="+acc" work.tb_integrador
-# End time: 22:30:27 on Oct 07,2026, Elapsed time: 0:07:38
-# Errors: 0, Warnings: 3
-# vsim -voptargs=""+acc"" work.tb_integrador 
-# Start time: 22:30:27 on Oct 07,2026
-# Loading work.tb_integrador
-# Loading work.integrador
-# Loading work.detector_de_borda
-# Loading work.ff_D
-# Loading work.contador_2b
-# Loading work.ff_T
-# Loading work.decoder_abc
-# Loading work.registrador_8b
-# Loading work.mux_2x1
-# Loading work.calculo_delta
-# Loading work.multiplicador_8x8_sinalizado
-# Loading work.numero_Final_8b
-# Loading work.complementoDe2_8bits
-# Loading work.somador_completo
-# Loading work.multiplicador_8x8
-# Loading work.meio_somador
-# Loading work.complementoDe2_16bits
-# Loading work.subtrator_18bits
-# Loading work.calcula_x1
-# Loading work.complementoDe2_9bits
-# Loading work.raiz_Quadrada
-# Loading work.sqrt_stage
-# Loading work.adder18
-# Loading work.sub18
-# Loading work.divisor_9x9_sinalizado
-# Loading work.numero_Final_9b
-# Loading work.divisor_9bits
-# Loading work.divisor
-# Loading work.subtrator
-# Loading sv_std.std
-# Loading work.calcula_x2
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 21:10:58 on Nov 09,2026, Elapsed time: 0:01:58
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 21:10:58 on Nov 09,2026
+# Loading work.tb_calcula_y
 # Loading work.calcula_y
-# Loading work.multiplicador_16x8_sinalizado
-# Loading work.numero_Final_16b
-# Loading work.somador_16bits
-# Loading work.multiplicador_16x8
-# Loading work.produtos_parciais_16x8
-# Loading work.complementoDe2_24bits
-# Loading work.somador_24b
-# Loading work.extensao_pra_24bits
-# Loading work.bin_pra_decimal
-# Loading work.double_dabble_stage
-# Loading work.ajuste_bcd
-# Loading work.bcd_maior_igual_5
-# Loading work.somador_4bits
-# Loading work.mux2_1_4bits
-# Loading work.bcd_to_7seg
-# Loading work.mux_4x1
-# ** Warning: Design size of 10154 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# Loading work.multiplicador_11x11_sinalizado
+# Loading work.somador_completo
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
+add wave -r /*
+vlog *.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:11:23 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
+# -- Compiling module calcula_y
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
+# -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
+# -- Compiling module contador_2b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
+# -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
+# -- Compiling module detector_de_borda
+# -- Compiling module ff_D
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
+# -- Compiling module multiplicador_8x8_sinalizado
+# -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
+# -- Compiling module mux_2x1
+# -- Compiling module registrador_8b
+# -- Compiling module somador_completo
+# -- Compiling module meio_somador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
+# 
+# Top level modules:
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 21:11:24 on Nov 09,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 21:11:26 on Nov 09,2026, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 21:11:26 on Nov 09,2026
+# Loading work.tb_calcula_y
+# Loading work.calcula_y
+# Loading work.multiplicador_11x11_sinalizado
+# Loading work.somador_completo
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
 add wave -r /*
 run -all
 # 
-# ==================================================
-#    INICIANDO GRAVACAO DOS REGS (a, b, c)
-# ==================================================
-# [145000 ns] Configurando SW para 'a' = -1 (0xFF)
-# [255000 ns] Configurando SW para 'b' = -10 (0xF6)
-# [365000 ns] Configurando SW para 'c' = -3 (0xFD)
+# ========================================================================================================================
+#  Iniciando a simulacao do calcula_y (Valores em Binario)
+# ========================================================================================================================
+# Tempo | x (11b)     | a (8b)   | b (8b)   | c (8b)   | y [29:0] (30b)                 | y [23:0] (24b)           | Ovf Cout
+# ------+-------------+----------+----------+----------+--------------------------------+--------------------------+---------
+#                                    10000 | 00000000011 | 00000010 | 00000011 | 00000001 | 001111111000011111111100011100 | 111000011111111100011100 |  0    0
+#                                    20000 | 11111111110 | 00000001 | 11111101 | 00000101 | 001111110011100001010100001111 | 110011100001010100001111 |  0    0
+#                                    30000 | 00000000000 | 00000101 | 00000111 | 00001010 | 001111111100011111011100001010 | 111100011111011100001010 |  0    0
+#                                    40000 | 00000001010 | 00000011 | 11111100 | 00010100 | 001111111100011111011000011000 | 111100011111011000011000 |  0    0
+# ========================================================================================================================
 # 
-# ==================================================
-#    LEITURA DAS SAIDAS NOS DISPLAYS
-# ==================================================
-# [475000 ns] Ajustando entrada SW (x) = -2 (0xFE)
-# 
-# [596000 ns] Seletor:      X  (sel=00)
-#   Display (s5..s0): ? ? ? ? ? 5
-# ---------------------------------------
-# [616000 ns] Seletor:      Y  (sel=01)
-#   Display (s5..s0): ? ? ? ? ? ?
-# ---------------------------------------
-# [636000 ns] Seletor:      X1 (sel=10)
-#   Display (s5..s0): ? ? ? ? ? ?
-# ---------------------------------------
-# [656000 ns] Seletor:      X2 (sel=11)
-#   Display (s5..s0): ? ? ? ? ? ?
-# ---------------------------------------
-# ** Note: $finish    : tb_integrador.v(141)
-#    Time: 706 ns  Iteration: 0  Instance: /tb_integrador
+# ** Note: $finish    : tb_calcula_y.v(59)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_calcula_y
 # 1
-# Break in Module tb_integrador at tb_integrador.v line 141
+# Break in Module tb_calcula_y at tb_calcula_y.v line 59
 
-# Compile of tb_integrador.v was successful.
+# Compile of calcula_vertices.v was successful.
+# Compile of calcula_y.sv was successful.
+# Compile of calcula_y.v was successful.
+# Compile of calcula_y_linha.v was successful.
+# Compile of complementoDe2_8bits.v was successful.
+# Compile of complementoDe2_16bits.v was successful.
+# Compile of complementoDe2_24bits.v was successful.
+# Compile of contador_2b.v was successful.
+# Compile of contador_3b.v was successful.
+# Compile of contador_640.v was successful.
+# Compile of decoder_abc.v was successful.
+# Compile of desenha_plano_cartesiano.v was successful.
+# Compile of detector_de_borda.v was successful.
+# Compile of ff_D.v was successful.
+# Compile of ff_T.v was successful.
+# Compile of integra_teste.v was successful.
+# Compile of maquina_central.v was successful.
+# Compile of maquina_VGA.v was successful.
+# Compile of multiplicador_8x8_sinalizado.v was successful.
+# Compile of multiplicador_8x11_sinalizado.v was successful.
+# Compile of multiplicador_8x22_sinalizado.sv failed with 1 errors.
+# Compile of multiplicador_11x11_sinalizado.v was successful.
+# Compile of multiplicador_16x8_sinalizado.sv was successful.
+# Compile of multiplicador_16x11_sinalizado.v was successful.
+# Compile of multiplicador_22x11_sinalizado.v was successful.
+# Compile of mux_2x1.v was successful.
+# Compile of registrador_8b.v was successful.
+# Compile of somador_completo.v was successful.
+# Compile of tb_calcula_y.v was successful.
+# Compile of vga_sync.v was successful.
+# 30 compiles, 1 failed with 1 error.
+# Compile of multiplicador_8x22_sinalizado.sv was successful.
 vlog *.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:33:45 on Oct 07,2026
-# vlog -reportprogress 300 bcd_to_7seg.v bin_pra_decimal.v calcula_x1.v calcula_y.v calculo_delta.v complementoDe2_8bits.v contador_2b.v divisor_9x9_sinalizado.v integrador.v multiplicador_16x8.v multiplicador_8x8.v multiplicador_8x8_sinalizado.v mux_2x1.v raiz_Quadrada.v seletor_xy.v somador_completo.v tb_calcula_x1.v tb_calcula_x2.v tb_integrador.v 
-# -- Compiling module bcd_to_7seg
-# -- Compiling module bcd_maior_igual_5
-# -- Compiling module somador_4bits
-# -- Compiling module mux2_1_4bits
-# -- Compiling module ajuste_bcd
-# -- Compiling module double_dabble_stage
-# -- Compiling module bin_pra_decimal
-# -- Compiling module calcula_x1
-# -- Compiling module complementoDe2_9bits
+# Start time: 21:15:58 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
 # -- Compiling module calcula_y
-# -- Compiling module somador_24b
-# -- Compiling module calculo_delta
-# -- Compiling module subtrator_18bits
-# -- Compiling module complementoDe2_8bits
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
 # -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
 # -- Compiling module contador_2b
-# -- Compiling module ff_T
-# -- Compiling module divisor_9x9_sinalizado
-# -- Compiling module subtrator
-# -- Compiling module divisor
-# -- Compiling module divisor_9bits
-# -- Compiling module numero_Final_9b
-# -- Compiling module integrador
-# -- Compiling module extensao_pra_24bits
-# -- Compiling module registrador_8b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
 # -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
 # -- Compiling module detector_de_borda
 # -- Compiling module ff_D
-# -- Compiling module somador_16bits
-# -- Compiling module produtos_parciais_16x8
-# -- Compiling module multiplicador_16x8
-# -- Compiling module numero_Final_16b
-# -- Compiling module multiplicador_16x8_sinalizado
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
 # -- Compiling module multiplicador_8x8_sinalizado
-# -- Compiling module numero_Final_8b
-# -- Compiling module complementoDe2_16bits
 # -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
 # -- Compiling module mux_2x1
-# -- Compiling module adder18
-# -- Compiling module sub18
-# -- Compiling module sqrt_stage
-# -- Compiling module raiz_Quadrada
-# -- Compiling module seletor_xy
-# -- Compiling module mux_4x1
-# -- Compiling module mux_4x1_antigo_1bit
+# -- Compiling module registrador_8b
 # -- Compiling module somador_completo
 # -- Compiling module meio_somador
-# -- Compiling module tb_calcula_x1
-# -- Compiling module tb_calcula_x2
-# -- Compiling module tb_integrador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
 # 
 # Top level modules:
-# 	seletor_xy
-# 	tb_calcula_x1
-# 	tb_calcula_x2
-# 	tb_integrador
-# End time: 22:33:45 on Oct 07,2026, Elapsed time: 0:00:00
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 21:15:59 on Nov 09,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vsim -voptargs="+acc" work.tb_integrador
-# End time: 22:33:47 on Oct 07,2026, Elapsed time: 0:03:20
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 21:16:01 on Nov 09,2026, Elapsed time: 0:04:35
 # Errors: 0, Warnings: 3
-# vsim -voptargs=""+acc"" work.tb_integrador 
-# Start time: 22:33:47 on Oct 07,2026
-# Loading work.tb_integrador
-# Loading work.integrador
-# Loading work.detector_de_borda
-# Loading work.ff_D
-# Loading work.contador_2b
-# Loading work.ff_T
-# Loading work.decoder_abc
-# Loading work.registrador_8b
-# Loading work.mux_2x1
-# Loading work.calculo_delta
-# Loading work.multiplicador_8x8_sinalizado
-# Loading work.numero_Final_8b
-# Loading work.complementoDe2_8bits
-# Loading work.somador_completo
-# Loading work.multiplicador_8x8
-# Loading work.meio_somador
-# Loading work.complementoDe2_16bits
-# Loading work.subtrator_18bits
-# Loading work.calcula_x1
-# Loading work.complementoDe2_9bits
-# Loading work.raiz_Quadrada
-# Loading work.sqrt_stage
-# Loading work.adder18
-# Loading work.sub18
-# Loading work.divisor_9x9_sinalizado
-# Loading work.numero_Final_9b
-# Loading work.divisor_9bits
-# Loading work.divisor
-# Loading work.subtrator
-# Loading sv_std.std
-# Loading work.calcula_x2
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 21:16:01 on Nov 09,2026
+# Loading work.tb_calcula_y
 # Loading work.calcula_y
-# Loading work.multiplicador_16x8_sinalizado
-# Loading work.numero_Final_16b
-# Loading work.somador_16bits
-# Loading work.multiplicador_16x8
-# Loading work.produtos_parciais_16x8
-# Loading work.complementoDe2_24bits
-# Loading work.somador_24b
-# Loading work.extensao_pra_24bits
-# Loading work.bin_pra_decimal
-# Loading work.double_dabble_stage
-# Loading work.ajuste_bcd
-# Loading work.bcd_maior_igual_5
-# Loading work.somador_4bits
-# Loading work.mux2_1_4bits
-# Loading work.bcd_to_7seg
-# Loading work.mux_4x1
-# ** Warning: Design size of 10154 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
-# This may because you are loading cell libraries which are not recommended with
-# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# Loading work.multiplicador_11x11_sinalizado
+# Loading work.somador_completo
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
 add wave -r /*
 run -all
 # 
-# ==================================================
-#    INICIANDO GRAVACAO DOS REGS (a, b, c)
-# ==================================================
-# [145000 ns] Configurando SW para 'a' = -1 (0xFF)
-# [255000 ns] Configurando SW para 'b' = -10 (0xF6)
-# [365000 ns] Configurando SW para 'c' = -3 (0xFD)
+# ========================================================================================================================
+#  Iniciando a simulacao do calcula_y (Valores em Binario)
+# ========================================================================================================================
+# Tempo | x (11b)     | a (8b)   | b (8b)   | c (8b)   | y [29:0] (30b)                 | y [23:0] (24b)           | Ovf Cout
+# ------+-------------+----------+----------+----------+--------------------------------+--------------------------+---------
+#                                    10000 | 00000000011 | 00000010 | 00000011 | 00000001 | 000000001000011110110110011100 | 001000011110110110011100 |  0    0
+#                                    20000 | 11111111110 | 00000001 | 11111101 | 00000101 | 111111111011100001001110001111 | 111011100001001110001111 |  0    0
+#                                    30000 | 00000000000 | 00000101 | 00000111 | 00001010 | 000000010100011101010110001010 | 010100011101010110001010 |  0    0
+#                                    40000 | 00000001010 | 00000011 | 11111100 | 00010100 | 000000001100011110011010011000 | 001100011110011010011000 |  0    0
+# ========================================================================================================================
 # 
-# ==================================================
-#    LEITURA DOS RESULTADOS BRUTOS
-# ==================================================
-# [475000 ns] Ajustando entrada SW (x) = -2 (0xFE)
-# 
-# ==================================================
-#        VALORES BRUTOS DOS SINAIS INTERNOS
-# ==================================================
-#   [REGISTRADORES DE ENTRADA]
-#     a  =   -1 (HEX: 0xff)
-#     b  =  -10 (HEX: 0xf6)
-#     c  =   -3 (HEX: 0xfd)
-#     x  =   -2 (HEX: 0xfe)
-# --------------------------------------------------
-#   [SAIDAS CALCULADAS]
-#     Delta =      88 (HEX: 0x00058)
-#     Y     =        13 (HEX: 0x00000d)
-#     X1    =   -9 (HEX: 0x1f7)
-#     X2    =    0 (HEX: 0x000)
-# ==================================================
-# 
-# ** Note: $finish    : tb_integrador.v(111)
-#    Time: 626 ns  Iteration: 0  Instance: /tb_integrador
+# ** Note: $finish    : tb_calcula_y.v(59)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_calcula_y
 # 1
-# Break in Module tb_integrador at tb_integrador.v line 111
+# Break in Module tb_calcula_y at tb_calcula_y.v line 59
+
+# Compile of multiplicador_22x11_sinalizado.v was successful.
+
+run -all
+vlog *.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:17:27 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
+# -- Compiling module calcula_y
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
+# -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
+# -- Compiling module contador_2b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
+# -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
+# -- Compiling module detector_de_borda
+# -- Compiling module ff_D
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
+# -- Compiling module multiplicador_8x8_sinalizado
+# -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
+# -- Compiling module mux_2x1
+# -- Compiling module registrador_8b
+# -- Compiling module somador_completo
+# -- Compiling module meio_somador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
+# 
+# Top level modules:
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 21:17:28 on Nov 09,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 21:17:30 on Nov 09,2026, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 21:17:30 on Nov 09,2026
+# Loading work.tb_calcula_y
+# Loading work.calcula_y
+# Loading work.multiplicador_11x11_sinalizado
+# Loading work.somador_completo
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
+add wave -r /*
+run -all
+# 
+# ========================================================================================================================
+#  Iniciando a simulacao do calcula_y (Valores em Binario)
+# ========================================================================================================================
+# Tempo | x (11b)     | a (8b)   | b (8b)   | c (8b)   | y [29:0] (30b)                 | y [23:0] (24b)           | Ovf Cout
+# ------+-------------+----------+----------+----------+--------------------------------+--------------------------+---------
+#                                    10000 | 00000000011 | 00000010 | 00000011 | 00000001 | 000000001000011110110110011100 | 001000011110110110011100 |  0    0
+#                                    20000 | 11111111110 | 00000001 | 11111101 | 00000101 | 111111111011100001001110001111 | 111011100001001110001111 |  0    0
+#                                    30000 | 00000000000 | 00000101 | 00000111 | 00001010 | 000000010100011101010110001010 | 010100011101010110001010 |  0    0
+#                                    40000 | 00000001010 | 00000011 | 11111100 | 00010100 | 000000001100011110011010011000 | 001100011110011010011000 |  0    0
+# ========================================================================================================================
+# 
+# ** Note: $finish    : tb_calcula_y.v(59)
+#    Time: 40 ns  Iteration: 0  Instance: /tb_calcula_y
+# 1
+# Break in Module tb_calcula_y at tb_calcula_y.v line 59
+
+vlog *.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:18:58 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
+# -- Compiling module calcula_y
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
+# -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
+# -- Compiling module contador_2b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
+# -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
+# -- Compiling module detector_de_borda
+# -- Compiling module ff_D
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
+# -- Compiling module multiplicador_8x8_sinalizado
+# -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
+# -- Compiling module mux_2x1
+# -- Compiling module registrador_8b
+# -- Compiling module somador_completo
+# -- Compiling module meio_somador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
+# 
+# Top level modules:
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 21:18:58 on Nov 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 21:19:03 on Nov 09,2026, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 21:19:03 on Nov 09,2026
+# Loading work.tb_calcula_y
+# Loading work.calcula_y
+# Loading work.multiplicador_11x11_sinalizado
+# Loading work.somador_completo
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
+add wave -r /*
+run -all
+# --------------------------------------------------------------------------------------------------
+#   TIME  |   X (dec/hex)   |   A (dec/hex)   |   B (dec/hex)   |   C (dec/hex)   |   Y (dec)   | OV | CO 
+# --------------------------------------------------------------------------------------------------
+# 10000 ns |     4 (h004) |    2 (h02) |    3 (h03) |    5 (h05) |    2223537 |  0 |  0
+# 20000 ns |     0 (h000) |    0 (h00) |    0 (h00) |    0 (h00) |     130432 |  0 |  0
+# 30000 ns |     5 (h005) |   -2 (hfe) |   -3 (hfd) |   10 (h0a) |   -1962679 |  0 |  0
+# 40000 ns |  2044 (h7fc) |    2 (h02) |    3 (h03) |    5 (h05) |   -1965159 |  0 |  0
+# 50000 ns |    10 (h00a) |    5 (h05) |   10 (h0a) |   20 (h14) |    5363692 |  0 |  0
+# --------------------------------------------------------------------------------------------------
+# ** Note: $finish    : tb_calcula_y.v(71)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_calcula_y
+# 1
+# Break in Module tb_calcula_y at tb_calcula_y.v line 71
+
+# Compile of calcula_vertices.v was successful.
+# Compile of calcula_y.sv was successful.
+# Compile of calcula_y.v was successful.
+# Compile of calcula_y_linha.v was successful.
+# Compile of complementoDe2_8bits.v was successful.
+# Compile of complementoDe2_16bits.v was successful.
+# Compile of complementoDe2_24bits.v was successful.
+# Compile of contador_2b.v was successful.
+# Compile of contador_3b.v was successful.
+# Compile of contador_640.v was successful.
+# Compile of decoder_abc.v was successful.
+# Compile of desenha_plano_cartesiano.v was successful.
+# Compile of detector_de_borda.v was successful.
+# Compile of ff_D.v was successful.
+# Compile of ff_T.v was successful.
+# Compile of integra_teste.v was successful.
+# Compile of maquina_central.v was successful.
+# Compile of maquina_VGA.v was successful.
+# Compile of multiplicador_8x8_sinalizado.v was successful.
+# Compile of multiplicador_8x11_sinalizado.v was successful.
+# Compile of multiplicador_8x22_sinalizado.sv was successful.
+# Compile of multiplicador_11x11_sinalizado.v was successful.
+# Compile of multiplicador_16x8_sinalizado.sv was successful.
+# Compile of multiplicador_16x11_sinalizado.v was successful.
+# Compile of multiplicador_22x11_sinalizado.v was successful.
+# Compile of mux_2x1.v was successful.
+# Compile of registrador_8b.v was successful.
+# Compile of somador_completo.v was successful.
+# Compile of tb_calcula_y.v was successful.
+# Compile of vga_sync.v was successful.
+# 30 compiles, 0 failed with no errors.
+vlog *.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:22:06 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
+# -- Compiling module calcula_y
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
+# -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
+# -- Compiling module contador_2b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
+# -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
+# -- Compiling module detector_de_borda
+# -- Compiling module ff_D
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
+# -- Compiling module multiplicador_8x8_sinalizado
+# -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
+# -- Compiling module mux_2x1
+# -- Compiling module registrador_8b
+# -- Compiling module somador_completo
+# -- Compiling module meio_somador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
+# 
+# Top level modules:
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 21:22:06 on Nov 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 21:22:09 on Nov 09,2026, Elapsed time: 0:03:06
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 21:22:09 on Nov 09,2026
+# Loading work.tb_calcula_y
+# Loading work.calcula_y
+# Loading work.multiplicador_11x11_sinalizado
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
+# Loading work.somador_completo
+add wave -r /*
+run -all
+# --------------------------------------------------------------------------------------------------
+#   TIME  |   X (dec/hex)   |   A (dec/hex)   |   B (dec/hex)   |   C (dec/hex)   |   Y (dec)   | OV | CO 
+# --------------------------------------------------------------------------------------------------
+# 10000 ns |     4 (h004) |    2 (h02) |    3 (h03) |    5 (h05) |         49 |  0 |  0
+# 20000 ns |     0 (h000) |    0 (h00) |    0 (h00) |    0 (h00) |          0 |  0 |  0
+# 30000 ns |     5 (h005) |   -2 (hfe) |   -3 (hfd) |   10 (h0a) |       1225 |  0 |  0
+# 40000 ns |  2044 (h7fc) |    2 (h02) |    3 (h03) |    5 (h05) |     -26599 |  0 |  0
+# 50000 ns |    10 (h00a) |    5 (h05) |   10 (h0a) |   20 (h14) |        620 |  0 |  0
+# --------------------------------------------------------------------------------------------------
+# ** Note: $finish    : tb_calcula_y.v(71)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_calcula_y
+# 1
+# Break in Module tb_calcula_y at tb_calcula_y.v line 71
+
+vlog *.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:24:19 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
+# -- Compiling module calcula_y
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
+# -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
+# -- Compiling module contador_2b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
+# -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
+# -- Compiling module detector_de_borda
+# -- Compiling module ff_D
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
+# -- Compiling module multiplicador_8x8_sinalizado
+# -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
+# -- Compiling module mux_2x1
+# -- Compiling module registrador_8b
+# -- Compiling module somador_completo
+# -- Compiling module meio_somador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
+# 
+# Top level modules:
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 21:24:20 on Nov 09,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 21:24:22 on Nov 09,2026, Elapsed time: 0:02:13
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 21:24:22 on Nov 09,2026
+# Loading work.tb_calcula_y
+# Loading work.calcula_y
+# Loading work.multiplicador_11x11_sinalizado
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
+# Loading work.somador_completo
+add wave -r /*
+run -all
+# --------------------------------------------------------------------------------------------------
+#   TIME  |   X (dec/hex)   |   A (dec/hex)   |   B (dec/hex)   |   C (dec/hex)   |   Y (dec)   | OV | CO 
+# --------------------------------------------------------------------------------------------------
+# 10000 ns |     4 (h004) |    2 (h02) |    3 (h03) |    5 (h05) |         49 |  0 |  0
+# 20000 ns |     0 (h000) |    0 (h00) |    0 (h00) |    0 (h00) |          0 |  0 |  0
+# 30000 ns |     5 (h005) |   -2 (hfe) |   -3 (hfd) |   10 (h0a) |       1225 |  0 |  0
+# 40000 ns |  2044 (h7fc) |    2 (h02) |    3 (h03) |    5 (h05) |       6169 |  0 |  0
+# 50000 ns |    10 (h00a) |    5 (h05) |   10 (h0a) |   20 (h14) |        620 |  0 |  0
+# --------------------------------------------------------------------------------------------------
+# ** Note: $finish    : tb_calcula_y.v(71)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_calcula_y
+# 1
+# Break in Module tb_calcula_y at tb_calcula_y.v line 71
+
+# Compile of multiplicador_11x11_sinalizado.v was successful.
+vlog *.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:24:38 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
+# -- Compiling module calcula_y
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
+# -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
+# -- Compiling module contador_2b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
+# -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
+# -- Compiling module detector_de_borda
+# -- Compiling module ff_D
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
+# -- Compiling module multiplicador_8x8_sinalizado
+# -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
+# -- Compiling module mux_2x1
+# -- Compiling module registrador_8b
+# -- Compiling module somador_completo
+# -- Compiling module meio_somador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
+# 
+# Top level modules:
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 21:24:38 on Nov 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 21:24:41 on Nov 09,2026, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 21:24:41 on Nov 09,2026
+# Loading work.tb_calcula_y
+# Loading work.calcula_y
+# Loading work.multiplicador_11x11_sinalizado
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
+# Loading work.somador_completo
+add wave -r /*
+run -all
+# --------------------------------------------------------------------------------------------------
+#   TIME  |   X (dec/hex)   |   A (dec/hex)   |   B (dec/hex)   |   C (dec/hex)   |   Y (dec)   | OV | CO 
+# --------------------------------------------------------------------------------------------------
+# 10000 ns |     4 (h004) |    2 (h02) |    3 (h03) |    5 (h05) |         49 |  0 |  0
+# 20000 ns |     0 (h000) |    0 (h00) |    0 (h00) |    0 (h00) |          0 |  0 |  0
+# 30000 ns |     5 (h005) |   -2 (hfe) |   -3 (hfd) |   10 (h0a) |       1225 |  0 |  0
+# 40000 ns |  2044 (h7fc) |    2 (h02) |    3 (h03) |    5 (h05) |       6169 |  0 |  0
+# 50000 ns |    10 (h00a) |    5 (h05) |   10 (h0a) |   20 (h14) |        620 |  0 |  0
+# --------------------------------------------------------------------------------------------------
+# ** Note: $finish    : tb_calcula_y.v(71)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_calcula_y
+# 1
+# Break in Module tb_calcula_y at tb_calcula_y.v line 71
+vlog *.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:24:48 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
+# -- Compiling module calcula_y
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
+# -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
+# -- Compiling module contador_2b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
+# -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
+# -- Compiling module detector_de_borda
+# -- Compiling module ff_D
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
+# -- Compiling module multiplicador_8x8_sinalizado
+# -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
+# -- Compiling module mux_2x1
+# -- Compiling module registrador_8b
+# -- Compiling module somador_completo
+# -- Compiling module meio_somador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
+# 
+# Top level modules:
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 21:24:48 on Nov 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 21:24:51 on Nov 09,2026, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 21:24:51 on Nov 09,2026
+# Loading work.tb_calcula_y
+# Loading work.calcula_y
+# Loading work.multiplicador_11x11_sinalizado
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
+# Loading work.somador_completo
+add wave -r /*
+run -all
+# --------------------------------------------------------------------------------------------------
+#   TIME  |   X (dec/hex)   |   A (dec/hex)   |   B (dec/hex)   |   C (dec/hex)   |   Y (dec)   | OV | CO 
+# --------------------------------------------------------------------------------------------------
+# 10000 ns |     4 (h004) |    2 (h02) |    3 (h03) |    5 (h05) |         49 |  0 |  0
+# 20000 ns |     0 (h000) |    0 (h00) |    0 (h00) |    0 (h00) |          0 |  0 |  0
+# 30000 ns |     5 (h005) |   -2 (hfe) |   -3 (hfd) |   10 (h0a) |       1225 |  0 |  0
+# 40000 ns |  2044 (h7fc) |    2 (h02) |    3 (h03) |    5 (h05) |       6169 |  0 |  0
+# 50000 ns |    10 (h00a) |    5 (h05) |   10 (h0a) |   20 (h14) |        620 |  0 |  0
+# --------------------------------------------------------------------------------------------------
+# ** Note: $finish    : tb_calcula_y.v(71)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_calcula_y
+# 1
+# Break in Module tb_calcula_y at tb_calcula_y.v line 71
+
+# Compile of multiplicador_8x22_sinalizado.sv was successful.
+vlog *.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:25:44 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
+# -- Compiling module calcula_y
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
+# -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
+# -- Compiling module contador_2b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
+# -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
+# -- Compiling module detector_de_borda
+# -- Compiling module ff_D
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
+# -- Compiling module multiplicador_8x8_sinalizado
+# -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
+# -- Compiling module mux_2x1
+# -- Compiling module registrador_8b
+# -- Compiling module somador_completo
+# -- Compiling module meio_somador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
+# 
+# Top level modules:
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 21:25:44 on Nov 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 21:25:46 on Nov 09,2026, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 21:25:46 on Nov 09,2026
+# Loading work.tb_calcula_y
+# Loading work.calcula_y
+# Loading work.multiplicador_11x11_sinalizado
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.somador_completo
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
+add wave -r /*
+run -all
+# --------------------------------------------------------------------------------------------------
+#   TIME  |   X (dec/hex)   |   A (dec/hex)   |   B (dec/hex)   |   C (dec/hex)   |   Y (dec)   | OV | CO 
+# --------------------------------------------------------------------------------------------------
+# 10000 ns |     4 (h004) |    2 (h02) |    3 (h03) |    5 (h05) |  266338737 |  0 |  0
+# 20000 ns |     0 (h000) |    0 (h00) |    0 (h00) |    0 (h00) |  266338688 |  0 |  0
+# 30000 ns |     5 (h005) |   -2 (hfe) |   -3 (hfd) |   10 (h0a) |  266339913 |  0 |  0
+# 40000 ns |  2044 (h7fc) |    2 (h02) |    3 (h03) |    5 (h05) |  266344857 |  0 |  0
+# 50000 ns |    10 (h00a) |    5 (h05) |   10 (h0a) |   20 (h14) |  266338796 |  0 |  0
+# --------------------------------------------------------------------------------------------------
+# ** Note: $finish    : tb_calcula_y.v(71)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_calcula_y
+# 1
+# Break in Module tb_calcula_y at tb_calcula_y.v line 71
+
+# Compile of calcula_vertices.v was successful.
+# Compile of calcula_y.sv was successful.
+# Compile of calcula_y.v was successful.
+# Compile of calcula_y_linha.v was successful.
+# Compile of complementoDe2_8bits.v was successful.
+# Compile of complementoDe2_16bits.v was successful.
+# Compile of complementoDe2_24bits.v was successful.
+# Compile of contador_2b.v was successful.
+# Compile of contador_3b.v was successful.
+# Compile of contador_640.v was successful.
+# Compile of decoder_abc.v was successful.
+# Compile of desenha_plano_cartesiano.v was successful.
+# Compile of detector_de_borda.v was successful.
+# Compile of ff_D.v was successful.
+# Compile of ff_T.v was successful.
+# Compile of integra_teste.v was successful.
+# Compile of maquina_central.v was successful.
+# Compile of maquina_VGA.v was successful.
+# Compile of multiplicador_8x8_sinalizado.v was successful.
+# Compile of multiplicador_8x11_sinalizado.v was successful.
+# Compile of multiplicador_8x22_sinalizado.sv was successful.
+# Compile of multiplicador_11x11_sinalizado.v was successful.
+# Compile of multiplicador_16x8_sinalizado.sv was successful.
+# Compile of multiplicador_16x11_sinalizado.v was successful.
+# Compile of multiplicador_22x11_sinalizado.v was successful.
+# Compile of mux_2x1.v was successful.
+# Compile of registrador_8b.v was successful.
+# Compile of somador_completo.v was successful.
+# Compile of tb_calcula_y.v was successful.
+# Compile of vga_sync.v was successful.
+# 30 compiles, 0 failed with no errors.
+vlog *.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:27:09 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
+# -- Compiling module calcula_y
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
+# -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
+# -- Compiling module contador_2b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
+# -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
+# -- Compiling module detector_de_borda
+# -- Compiling module ff_D
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
+# -- Compiling module multiplicador_8x8_sinalizado
+# -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
+# -- Compiling module mux_2x1
+# -- Compiling module registrador_8b
+# -- Compiling module somador_completo
+# -- Compiling module meio_somador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
+# 
+# Top level modules:
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 21:27:10 on Nov 09,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 21:27:12 on Nov 09,2026, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 21:27:13 on Nov 09,2026
+# Loading work.tb_calcula_y
+# Loading work.calcula_y
+# Loading work.multiplicador_11x11_sinalizado
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
+# Loading work.somador_completo
+add wave -r /*
+run -all
+# --------------------------------------------------------------------------------------------------
+#   TIME  |   X (dec/hex)   |   A (dec/hex)   |   B (dec/hex)   |   C (dec/hex)   |   Y (dec)   | OV | CO 
+# --------------------------------------------------------------------------------------------------
+# 10000 ns |     4 (h004) |    2 (h02) |    3 (h03) |    5 (h05) |         49 |  0 |  0
+# 20000 ns |     0 (h000) |    0 (h00) |    0 (h00) |    0 (h00) |          0 |  0 |  0
+# 30000 ns |     5 (h005) |   -2 (hfe) |   -3 (hfd) |   10 (h0a) |       1225 |  0 |  0
+# 40000 ns |  2044 (h7fc) |    2 (h02) |    3 (h03) |    5 (h05) |       6169 |  0 |  0
+# 50000 ns |    10 (h00a) |    5 (h05) |   10 (h0a) |   20 (h14) |        620 |  0 |  0
+# --------------------------------------------------------------------------------------------------
+# ** Note: $finish    : tb_calcula_y.v(71)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_calcula_y
+# 1
+# Break in Module tb_calcula_y at tb_calcula_y.v line 71
+
+# Compile of multiplicador_8x11_sinalizado.v was successful.
+vlog *.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:28:47 on Nov 09,2026
+# vlog -reportprogress 300 calcula_vertices.v calcula_y.v calcula_y_linha.v complementoDe2_16bits.v complementoDe2_24bits.v complementoDe2_8bits.v contador_2b.v contador_3b.v contador_640.v decoder_abc.v desenha_plano_cartesiano.v detector_de_borda.v ff_D.v ff_T.v integra_teste.v maquina_VGA.v maquina_central.v multiplicador_11x11_sinalizado.v multiplicador_16x11_sinalizado.v multiplicador_22x11_sinalizado.v multiplicador_8x11_sinalizado.v multiplicador_8x8_sinalizado.v mux_2x1.v registrador_8b.v somador_completo.v tb_calcula_y.v vga_sync.v 
+# -- Compiling module calcula_vertices
+# -- Compiling module vertice_x
+# -- Compiling module vertice_y
+# -- Compiling module calcula_y
+# -- Compiling module somador_30b
+# -- Compiling module calcula_y_linha
+# -- Compiling module somador_27b
+# -- Compiling module complementoDe2_16bits
+# -- Compiling module complementoDe2_24bits
+# -- Compiling module complementoDe2_8bits
+# -- Compiling module contador_2b
+# -- Compiling module contador_3b
+# -- Compiling module contador_640
+# -- Compiling module decoder_abc
+# -- Compiling module desenha_plano_cartesiano
+# -- Compiling module detector_de_borda
+# -- Compiling module ff_D
+# -- Compiling module ff_T
+# -- Compiling module integra_teste
+# -- Compiling module maquina_VGA
+# -- Compiling module maquina_central
+# -- Compiling module multiplicador_11x11_sinalizado
+# -- Compiling module multiplicador_16x11_sinalizado
+# -- Compiling module multiplicador_22x11_sinalizado
+# -- Compiling module multiplicador_8x11_sinalizado
+# -- Compiling module multiplicador_8x8_sinalizado
+# -- Compiling module multiplicador_8x8
+# -- Compiling module numero_Final_8b
+# -- Compiling module mux_2x1
+# -- Compiling module registrador_8b
+# -- Compiling module somador_completo
+# -- Compiling module meio_somador
+# -- Compiling module tb_calcula_y
+# -- Compiling module vga_sync
+# 
+# Top level modules:
+# 	calcula_vertices
+# 	vertice_x
+# 	vertice_y
+# 	calcula_y_linha
+# 	complementoDe2_24bits
+# 	contador_2b
+# 	contador_640
+# 	desenha_plano_cartesiano
+# 	integra_teste
+# 	maquina_VGA
+# 	maquina_central
+# 	multiplicador_22x11_sinalizado
+# 	tb_calcula_y
+# End time: 21:28:47 on Nov 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs="+acc" work.tb_calcula_y
+# End time: 21:28:50 on Nov 09,2026, Elapsed time: 0:01:37
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" work.tb_calcula_y 
+# Start time: 21:28:50 on Nov 09,2026
+# Loading work.tb_calcula_y
+# Loading work.calcula_y
+# Loading work.multiplicador_11x11_sinalizado
+# Loading sv_std.std
+# Loading work.multiplicador_8x22_sinalizado
+# Loading work.multiplicador_8x11_sinalizado
+# Loading work.somador_30b
+# Loading work.somador_completo
+add wave -r /*
+run -all
+# --------------------------------------------------------------------------------------------------
+#   TIME  |   X (dec/hex)   |   A (dec/hex)   |   B (dec/hex)   |   C (dec/hex)   |   Y (dec)   | OV | CO 
+# --------------------------------------------------------------------------------------------------
+# 10000 ns |     4 (h004) |    2 (h02) |    3 (h03) |    5 (h05) |         49 |  0 |  0
+# 20000 ns |     0 (h000) |    0 (h00) |    0 (h00) |    0 (h00) |          0 |  0 |  0
+# 30000 ns |     5 (h005) |   -2 (hfe) |   -3 (hfd) |   10 (h0a) |        -55 |  0 |  0
+# 40000 ns |  2044 (h7fc) |    2 (h02) |    3 (h03) |    5 (h05) |         25 |  0 |  0
+# 50000 ns |    10 (h00a) |    5 (h05) |   10 (h0a) |   20 (h14) |        620 |  0 |  0
+# --------------------------------------------------------------------------------------------------
+# ** Note: $finish    : tb_calcula_y.v(71)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_calcula_y
+# 1
+# Break in Module tb_calcula_y at tb_calcula_y.v line 71
 

@@ -17,5 +17,6 @@ module decoder_abc (
     // (count = 10)
     and (sel_c, count[1], countN0);
 
-    // count = 11 → nenhuma saída ativa (travado), implícito
+    and (sel_d, count[1], count[0]);
+	 
 endmodule

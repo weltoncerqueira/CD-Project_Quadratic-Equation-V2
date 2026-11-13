@@ -1,0 +1,23 @@
+
+//Calcula os vertices com saidas de erro
+module calcula_vertices(
+
+);
+
+endmodule
+
+
+// -b/2a
+module vertice_x (
+	
+);
+
+endmodule
+
+
+// -delta / 4a
+module vertice_y (
+
+);
+
+endmodule

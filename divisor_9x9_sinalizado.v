@@ -4,7 +4,6 @@ module divisor_9x9_sinalizado (
 	input  [8:0] B,
 	output [8:0] S,
 	output [8:0] resto 
-	
 );
 	
 	wire [8:0] A_final, B_final, div_result, resto_sem_sinal;

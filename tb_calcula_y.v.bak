@@ -1,0 +1,75 @@
+`timescale 1ns / 1ps
+
+module tb_calcula_y;
+
+    // Entradas do módulo
+    reg [10:0] x;
+    reg [7:0]  a;
+    reg [7:0]  b;
+    reg [7:0]  c;
+
+    // Saídas do módulo
+    wire       overflow;
+    wire       cout;
+    wire [29:0] y;
+
+    // Instancia o DUT (Device Under Test) - O seu módulo calcula_y
+    calcula_y uut (
+        .x(x),
+        .a(a),
+        .b(b),
+        .c(c),
+        .overflow(overflow),
+        .cout(cout),
+        .y(y)
+    );
+
+    // Bloco de Estímulos para o Teste
+    initial begin
+        // Exibe o cabeçalho no console do simulador
+        $display("Iniciando a simulacao do calcula_y...");
+        $display("Tempo\t x\t\t a\t\t b\t\t c\t\t | y (Decimal)\t\t Overflow\t Cout");
+        $display("-----------------------------------------------------------------------------------------");
+
+        // Caso 1: Valores positivos simples -> y = 2*(3)^2 + 3*(3) + 1 = 2(9) + 9 + 1 = 28
+        x = 11'sd3;
+        a = 8'sd2;
+        b = 8'sd3;
+        c = 8'sd1;
+        #10;
+        $display("%0t\t %d\t %d\t %d\t %d\t | %d\t\t %b\t\t %b", 
+                  $time, $signed(x), $signed(a), $signed(b), $signed(c), $signed(y), overflow, cout);
+
+        // Caso 2: Utilizando valores negativos em complemento de dois -> y = 1*(-2)^2 + (-3)*(-2) + 5 = 4 + 6 + 5 = 15
+        x = -11'sd2;
+        a =  8'sd1;
+        b = -8'sd3;
+        c =  8'sd5;
+        #10;
+        $display("%0t\t %d\t %d\t %d\t %d\t | %d\t\t %b\t\t %b", 
+                  $time, $signed(x), $signed(a), $signed(b), $signed(c), $signed(y), overflow, cout);
+
+        // Caso 3: Testando com x = 0 (deve resultar apenas no valor de c) -> y = 0 + 0 + 10 = 10
+        x = 11'sd0;
+        a = 8'sd5;
+        b = 8'sd7;
+        c = 8'sd10;
+        #10;
+        $display("%0t\t %d\t %d\t %d\t %d\t | %d\t\t %b\t\t %b", 
+                  $time, $signed(x), $signed(a), $signed(b), $signed(c), $signed(y), overflow, cout);
+
+        // Caso 4: Valores maiores para testar a robustez dos multiplicadores e somadores
+        x = 11'sd10;
+        a = 8'sd3;
+        b = -8'sd4;
+        c = 8'sd20;
+        #10;
+        $display("%0t\t %d\t %d\t %d\t %d\t | %d\t\t %b\t\t %b", 
+                  $time, $signed(x), $signed(a), $signed(b), $signed(c), $signed(y), overflow, cout);
+
+        $display("-----------------------------------------------------------------------------------------");
+        $display("Simulacao concluida com sucesso!");
+        $finish;
+    end
+
+endmodule

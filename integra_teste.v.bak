@@ -1,0 +1,63 @@
+
+module integra_teste (
+    input [7:0] sw,
+    input [1:0] sel,
+    input botao,
+    input clk,
+    input reset,
+	 output sel_a, sel_b, sel_c
+    
+);
+
+    wire [7:0] reg_a, reg_b, reg_c;
+    wire [1:0] count;
+	 
+    wire botao_pulse; 
+     
+    wire rst_interno;
+    not (rst_interno, reset);
+    
+     
+    // captura um pulso único do botão
+   detector_de_borda borda_1 (
+       .clk(clk),
+       .rst(rst_interno),
+       .sinal(botao),
+       .pulso(botao_pulse)
+    );
+
+    // Conta até 3, com base em cada pulso do botao
+   contador_2b contComPausa (
+        .pulso(botao_pulse),    
+        .clk(clk),
+        .rst(rst_interno),
+        .Q(count)
+    );
+     
+     // Decodifica o contador para escolher qual registrador receberá o valor das chaves
+    decoder_abc abc (
+        .count(count), 
+        .sel_a(sel_a), 
+        .sel_b(sel_b), 
+        .sel_c(sel_c)
+    );
+     
+     // registradores
+    registrador_8b reg8_a (.D(sw), .enable(sel_a), .rst(rst_interno), .clk(clk), .S(reg_a));
+    registrador_8b reg8_b (.D(sw), .enable(sel_b), .rst(rst_interno), .clk(clk), .S(reg_b));
+    registrador_8b reg8_c (.D(sw), .enable(sel_c), .rst(rst_interno), .clk(clk), .S(reg_c));
+	 
+	 wire [23:0] y;
+	 
+	 calcula_y y1 (
+      .x(sw),
+      .a(reg_a),
+      .b(reg_b),
+      .c(reg_c),
+      .overflow(),
+      .cout(),
+      .y(y)
+    );
+	 
+	 
+endmodule
